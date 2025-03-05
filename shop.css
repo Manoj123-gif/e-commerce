@@ -1,0 +1,328 @@
+
+/* ===========Utility Class for Shop ==================== */
+
+.margin{padding-inline: 0.5rem;}
+button{cursor: pointer;}
+.uil{cursor: pointer;}
+
+/* =========== End Utility Class for Shop ==================== */
+
+/* ========= Shop Feature Section 1 ================ */
+
+.shop-feature{
+    width: 100vw;
+    place-items: center;
+    padding: 3rem 0;
+}
+
+/* ========= Shop Feature Section 2 ================ */
+
+.shop-main-container{
+    width: 90vw;
+    margin-inline: auto;
+    margin-block: 2rem;
+}
+
+.shop-title {
+     justify-content: space-between;
+     align-items: center;
+}
+
+.shop-title select{
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+/* ============= Shop Product Section ============= */
+
+.shop-product{
+    margin-block: 2rem;
+}
+
+.product-list{
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.product-list:hover,
+.product-list:focus{
+    color: hsl(var(--clr-red));
+}
+
+/* .product-list img{
+    border-radius: rem;
+} */
+
+.shop-btn{
+    align-items: center;
+    --flex-gap: 1rem;
+    transform: translateX(-26%);
+    transition: tranform 250ms ease-in-out;
+    cursor: pointer;
+}
+
+.product-list:hover .shop-btn{
+    transform: translateX(0%);
+}
+
+.shop-btn > button{
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+/* ============= PUP up  BOX ============= */
+
+.pup-up{
+    position: absolute;
+    background-color: hsl(var(--clr-red));
+    top: 1rem;
+    left: 1rem;
+    border-radius: 46%;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.7rem;
+    color: hsl(var(--clr-white));
+}
+.pup-up-1{
+    position: absolute;
+    background-color: hsl(var(--clr-black));
+    top: 1rem;
+    left: 1rem;
+    border-radius: 15%;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.7rem;
+    color: hsl(var(--clr-white));
+}
+
+/* ================== Grid Section ============== */
+
+.shop-product:nth-child(1){
+    grid-area: one;
+}
+.shop-product:nth-child(2){
+    grid-area: two;
+}
+.shop-product:nth-child(3){
+    grid-area: three;
+}
+.shop-product:nth-child(4){
+    grid-area: four;
+}
+.shop-product:nth-child(5){
+    grid-area: five;
+}
+.shop-product:nth-child(6){
+    grid-area: six;
+}
+.shop-product:nth-child(7){
+    grid-area: seven;
+}
+.shop-product:nth-child(8){
+    grid-area: eight;
+}
+.shop-product:nth-child(9){
+    grid-area: nine;
+}
+.shop-product:nth-child(10){
+    grid-area: ten;
+}
+.shop-product:nth-child(11){
+    grid-area: eleven;
+}
+.shop-product:nth-child(12){
+    grid-area: twelve;
+}
+.shop-product:nth-child(13){
+    grid-area: thirteen;
+}
+.shop-product:nth-child(14){
+    grid-area: fourteen;
+}
+.shop-product:nth-child(15){
+    grid-area: fifteen;
+}
+.shop-product:nth-child(16){
+    grid-area: sixteen;
+}
+.shop-product:nth-child(17){
+    grid-area: seventeen;
+}
+.shop-product:nth-child(18){
+    grid-area: eighteen;
+}
+
+
+/*=================== pagination===================== */
+
+.pagination{
+    margin-top: 4rem;
+}
+
+.pagination a{
+    color: hsl(var(--clr-black));
+}
+
+#feature > nav > ul > li.page-item.active > a{
+    background-color: hsl(var(--clr-black));
+    border-color: hsl(var(--clr-white));
+}
+
+#feature > nav > ul > li:nth-child(n):hover > a{
+    background-color: hsl(var(--clr-red));
+    color: hsl(var(--clr-white));
+}
+/*=================== end pagination===================== */
+
+
+/* =========== Media for Desktop ============== */
+
+@media(min-width:59em){
+    .shop-main-container{
+        --grid-gap: 2rem;
+        grid-auto-columns: 1fr;
+        grid-template-columns: auto 20vw;
+    }
+
+    .shop-main-container >*:first-child{
+        grid-column: 1;
+    }
+
+    .shop-main-container >*:last-child{
+        grid-column: 2;
+    }
+
+    .shop-product{
+        grid-template-areas: 
+        'one two three'
+        'four five six '
+        'seven eight nine'
+        'ten eleven twelve'
+        'thirteen fourtheen fifteen '
+        'sixteen seventeen  eighteen';
+    }
+
+    .shop-product >h3{
+        font-size: 1rem;
+    }
+
+    .sidebar-search{
+        padding-inline: 1rem;
+    }
+
+    .category-list >h3{
+        font-size: 1rem;
+    }
+
+    .product-list .shop-btn{
+        transform: translateX(-45%);
+    }
+
+    .shop-btn >button{
+        font-size: 0.9rem;
+    }
+}
+
+/* ============== Media For i-pad ============== */
+
+@media (min-width:39em) and (max-width:59em){
+    .shop-product{
+        grid-template-areas: 
+        'one two'
+        'three four'
+        'five six'
+        'seven  eight'
+        'nine ten'
+        'eleven twelve'
+        'thirteen fourtheen '
+        'fifteen sixteen'
+        'seventeen  eighteen';
+    }
+
+    .product-list .shop-btn{
+        transform: translateX(-33%);
+    }
+
+}
+
+/* ============ Sidebar Sedcion =============== */
+
+.sidebar-search{
+    border-radius: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.sidebar-search input{
+    padding: 1rem 0.5rem;
+    width: 80%;
+    border-radius: 2rem;
+    border: 0;
+}
+
+.sidebar-search input:focus{
+        outline: none;
+}
+
+.sidebar-search input[type='text'] {
+      padding-inline: 2rem;
+}
+
+.sidebar-search >* i{
+    padding: 0.9rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    box-shadow: -2px -0px 18px hsl(var(--clr-gray-light));
+}
+
+/* =============== Category list ============= */
+
+.category-list{
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+    padding-bottom: 2rem;
+}
+
+.category-list >i{
+    font-size: 2rem;
+    transform: rotate(0deg);
+    transition: transform 300ms ease-in-out;
+}
+
+.category-list >i[data-category="true"]{
+    transform: rotate(90deg);
+}
+
+.shop-category-list{
+    overflow-Y: hidden;
+}
+
+.slidebar-nav{
+    margin: 0;
+    padding: 0;
+    padding-inline: 2.5rem;
+    list-style: none;
+    --grid-gap: 0.8rem;
+    transform: translateY(-100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.slidebar-nav[data-category="true"]{
+    transform: translateY(0%);
+}
+
+.slidebar-nav a{
+    text-decoration: none;
+}
+
+.product-list a{
+    text-decoration: none;
+    color: hsl(var(--clr-black));
+}
+
+.product-list a :hover{
+    color: hsl(var(--clr-red));
+}

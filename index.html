@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===============Google fonts============= -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&
+    family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <!--===========Google fonts======================-->
+
+    <!-- ================== Icon Scout======================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+     <!-- ================== Icon Scout======================-->
+
+     <link rel="stylesheet" href="home.css">
+     <link rel="stylesheet" href="shop.css">
+
+     <script src="home.js" defer></script>
+     <title>E-commerce Websites</title>
+</head>
+<body class="home">
+     <!--=============Start Header Section=============================-->
+    <header class="primary-header container flex">
+        <div class="header-inner-one flex">
+            <div class="logo-container">
+                <a href="home.html"><img src="image/Logo.png" alt="" id="logo"></a>
+            </div>
+            <button class="mobile-close-btn" data-visible="false"
+            aria-controls="primary-navigation"><i class="uil 
+            uil-times-circle"></i></button>
+            <nav>
+                <ul id="primary-navigation" data-visible="false" 
+                class="primary-navigation flex" >
+                <li><a class="active fs-100 fs-montserrat bold-500" href="/home.html">Home</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/shop.html">Shop</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/about.html">Abouts Us</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/blog.html">Blog</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-login flex">
+
+          
+          
+          <i class="search uil uil-search" id="search-btn"></i>
+          
+            <i id="cart-icon" class="uli uil-shopping-bag"></i>
+            
+              <div class="number">0</div>
+            
+            <header>
+              <nav class="navbar">
+                  <button class="login-btn  fs-montserrat">LOG IN</button>
+              </nav>
+          </header>
+           </div>
+
+           <form class="search-form">
+            <input type="text" id="search-box" name="Search" placeholder="Search..." class="fs-montserrat"/>
+            <label for="search-box"  class="uil uil-search "></label>
+          </form>
+            <!--================ login section========================== -->
+            
+      
+          <div class="blur-bg-overlay"></div>
+          <div class="form-popup">
+              <span class="close-btn material-symbols-rounded"><i class="uil uil-times"></i></span>
+              <div class="form-box login fs-poppins">
+                  <div class="form-details ">
+                      <h2>Welcome Back</h2>
+                      <p class="fs-montserrat">Please log in using your personal information to stay connected with us.</p>
+                  </div>
+                  <div class="form-content fs-poppins">
+                      <h2>LOGIN</h2>
+                      <form action="#">
+                          <div class="input-field">
+                              <input type="text" required>
+                              <label>Email</label>
+                          </div>
+                          <div class="input-field">
+                              <input type="password" required>
+                              <label>Password</label>
+                          </div>
+                          <a href="#" class="forgot-pass-link">Forgot password?</a>
+                          <button type="submit">Log In</button>
+                      </form>
+                      <div class="bottom-link">
+                          Don't have an account?
+                          <a href="#" id="signup-link">Signup</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="form-box signup fs-poppins">
+                  <div class="form-details">
+                      <h2>Create Account</h2>
+                      <p class="fs-montserrat">To become a part of our community, please sign up using your personal information.</p>
+                  </div>
+                  <div class="form-content">
+                      <h2>SIGNUP</h2>
+                      <form action="#">
+                          <div class="input-field">
+                              <input type="text" required>
+                              <label>Enter your email</label>
+                          </div>
+                          <div class="input-field">
+                              <input type="password" required>
+                              <label>Create password</label>
+                          </div>
+                          <div class="policy-text">
+                              <input type="checkbox" id="policy">
+                              <label for="policy">
+                                  I agree the
+                                  <a href="#" class="option">Terms & Conditions</a>
+                              </label>
+                          </div>
+                          <button type="submit">Sign Up</button>
+                      </form>
+                      <div class="bottom-link">
+                          Already have an account? 
+                          <a href="#" id="login-link">Login</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+            <!--================ END login section========================== -->
+            <!--===========================================================-->
+
+               <!-- CART BOX -->
+
+               <div class="cart">
+                  
+                      <h2 class="cart-title fs-poppins">Your Cart</h2>
+                      <!-- content -->
+                      <div class="cart-content">
+                        <!-- text-box -->
+                        <div class="cart-box">
+                          <img src="image/1.png" class="cart-img" alt="">
+                          <div class="deatil-box">
+                            <div class="cart-product-title fs-poppins">Watch</div>
+                            <div class="cart-price fs-montserrat"> Nrs 44000.00</div>
+                            <input type="number" value="1" class="cart-quantity">
+                          </div>
+                          <!-- remove cart -->
+                          <i class="uil uil-trash cart-remove"></i>
+                        </div>
+                      </div>
+                      <!-- total -->
+                      <div class="total">
+                      <div class="total-title fs-poppins">Total</div>
+                      <div class="total-price fs-montserrat">Nrs 0</div>
+                      </div>
+                      
+                      <!-- buy button -->
+                      <button type="button" class="buy-btn fs-poppins">Buy Now</button>
+
+                      <!-- cart close -->
+                      <i id="cart-close" class="uil uil-times"></i>
+
+                      
+               </div> 
+                <!--============================================================-->
+        </div>
+          <div class="mobile-open-btn">
+          <i class="uil uil-align-right"></i>
+        </div>
+    </header>
+        <!--=============End Header Section=============================-->
+        
+        <!---======================== Hero Section ============================-->
+          
+        <main class="hero-section"> 
+
+          <div>
+          <h1 class="fs-200 fs-poppins">Beats Solo  <span class="big-wireless block
+            lineheight fs-300 bold-900 fs-poppins">Wireless</span>  
+            <span class="text-white uppercase lineheight2 bold-bolder fs-poppins fs-900">HeadPhone</span>
+          </h1>
+          <img src="/image/image1.png" alt="">
+        </div>
+        <div class="hero-inner flex">
+          <div>
+           <a href="shop.html"> <button class="large-btn bg-red text-white fs-poppins fs-50">
+              Shop By Category</button></a>
+          </div>
+          <div class="hero-info">
+               <h4 class="fs-montserrat">Description</h4>
+               <p class="fs-montserrat">There are variation passages of Lorem Ipsum
+                available, but the majority have suffered alteration </p>
+          </div>
+        </div>
+        </main>
+
+
+        <!---======================== End of Hero Section ============================-->
+        
+       <!---=========================== product Section ====================-->
+
+         <section class="product-section ">
+          <!--------------------------1------------------------->
+          <div class="category bg-black grid">
+            <div>
+            <h3 class="text-white fs-50 fs-montserrat">Enjoy <span class="block
+              fs-300 fs-poppins">With</span> <span class="earphone uppercase fs-400
+              fs-montserrat bold-900 lineheight">Earphone</span></h3>
+            <a href="earephone.html"><button class="product-btn large-btn text-white bg-red
+            fs-montserrat">Browse</button></a>
+          </div>
+
+          <div class="product-img1">
+            <img src="/image/h.png" alt="">
+          </div>
+        </div>
+          <!-------------------------------2----------------------------->
+        <div class="category bg-yellow grid">
+          <div>
+          <h3 class="text-white fs-50 fs-montserrat">New <span class="block
+            fs-300 fs-poppins">Smart</span> <span class="watch uppercase fs-400
+            fs-montserrat bold-900 lineheight">watch</span></h3>
+          <a href="watch.html"><button class="product-btn large-btn text-yellow bg-white
+          fs-montserrat">Browse</button></a>
+        </div>
+
+        <div class="product-img2">
+          <img src="/image/w.png" alt="">
+        </div>
+      </div>
+         <!--------------------------------3--------------------------->
+         <div class="category bg-red grid">
+          <div>
+          <h3 class="text-white fs-50 fs-montserrat">Trend <span class="block
+            fs-300 fs-poppins">Devices</span> <span class="laptop uppercase fs-400
+            fs-montserrat bold-900 lineheight">laptop</span></h3>
+          <a href="laptop.html"><button class="product-btn large-btn text-red bg-white
+          fs-montserrat">Browse</button></a>
+        </div>
+
+        <div class="product-img3">
+          <img src="/image/Laptop.png" alt="">
+        </div>
+      </div>
+          <!------------------------------------4------------------------------>
+          <div class="category bg-gray grid">
+            <div>
+            <h3 class="text-black fs-50 fs-montserrat">Best <span class="block
+              fs-300 fs-poppins">Gaming</span> <span class="Conse uppercase fs-400
+              fs-montserrat bold-900 lineheight">console</span></h3>
+            <a href="gaming.html"><button class="product-btn large-btn text-white bg-red
+            fs-montserrat">Browse</button></a>
+          </div>
+
+          <div class="product-img4">
+            <img src="/image/gam.png" alt="">
+          </div>
+        </div>
+        <!--=-------------------------------------5--------------------------------->
+        <div class="category bg-green grid">
+          <div>
+          <h3 class="text-white fs-50 fs-montserrat">New <span class="block
+            fs-300 fs-poppins">VR</span> <span class="oculus uppercase fs-400
+            fs-montserrat bold-900 lineheight">Headsets</span></h3>
+          <a href="headset.html"><button class="product-btn large-btn text-green bg-white
+          fs-montserrat">Browse</button></a>
+        </div>
+
+        <div class="product-img5">
+          <img src="/image/man2.png" alt="">
+        </div>
+      </div>
+      <!-----------------------------------------------6------------------------------>
+      <div class="category bg-blue grid">
+        <div>
+        <h3 class="text-white fs-50 fs-montserrat">New <span class="block
+          fs-300 fs-poppins">Amazon</span> <span class="speaker uppercase fs-400
+          fs-montserrat bold-900 lineheight">speaker</span></h3>
+        <a href="speaker.html"><button class="product-btn large-btn text-blue bg-white
+        fs-montserrat">Browse</button></a>
+      </div>
+
+      <div class="product-img6">
+        <img src="/image/mus.png" alt="">
+      </div>
+    </div>
+         </section>
+       <!---===========================End of product Section ====================-->
+
+       <!--====================== Service Section ======================-->
+
+       <section class="service-section">
+        <!-----------------------1--------------->
+
+        <div class="service">
+            <img src="/image/free.svg" alt="">
+            <div class="service-info">
+              <h3 class="fs-poppins fs-200">Free Shopping</h3>
+              <p class="fs-montserrat fs-50">Free Shopping On All Order</p>
+            </div>
+        </div>
+
+        <!----------------------------2---------------------------->
+
+        <div class="service">
+            <img src="/image/sett.svg" alt="">
+            <div class="service-info">
+              <h3 class="fs-poppins fs-200">Money Guarantee </h3>
+              <p class="fs-montserrat fs-50">30 Day Money Back</p>
+            </div>
+        </div>
+
+        <!--------------------------------------3------------------>
+
+        <div class="service">
+            <img src="/image/supt.svg" alt="">
+            <div class="service-info">
+              <h3 class="fs-poppins fs-200">Online Support 24/7</h3>
+              <p class="fs-montserrat fs-50">Technical Support 24/7</p>
+            </div>
+        </div>
+
+        <!---------------------------------------4---------------------->
+
+        <div class="service">
+            <img src="/image/pay.svg" alt="">
+            <div class="service-info">
+              <h3 class="fs-poppins fs-200">Secure Payment</h3>
+              <p class="fs-montserrat fs-50">All Card Accepted</p>
+            </div>
+        </div>
+       </section>
+
+       <!--====================== End of Service Section ======================-->
+       
+       <!--======================== Feature Section 1 ====================-->
+
+       <section class="feature-section bg-red">
+        <div class="feature-one grid">
+          <img src="image/p-1.png" alt="">
+          <p class="text-white uppercase">20% OFF </p>
+          <p class="font-size lineheight fs-600 lineheight2 text-white 
+          fs-poppins bold-900"> FINE <span class="smile">SMILE</span></p>
+          <p class="date text-white fs-poppins fs-50">13 April To 13 May</p>
+        </div>
+        <div class="feature-info">
+          <h2 class="fs-200 text-white fs-poppins bold-500">Beats Solo Air</h2>
+          <p class="fs-poppins text-white fs-300 bold-800">Summer Sale</p>
+          <p class="fs-montserrat text-white fs-50">Company that's grown from 270 to 480 employees
+             in the last 12 months.
+            </p>
+          <a href="headset.html"><button class="prodduct-btn large-btn text-red bg-white
+          fs-poppins">Shop</button></a>
+        </div>
+       </section>
+       
+       <!--======================== End Feature Section 1 ====================-->
+
+       <!---=========================== Best Seller Product==============-->
+
+       <!---=========================== Header ==============-->
+             <section class="best-product container">
+              <h2 class="letter-spacing bold-bolder fs-300 fs-poppins">Best Seller Products</h2>
+              <p class="fs-montserrat fs-100">speakerThere are many variation passages</p>
+             </section>
+
+       <section class="best-sell-product grid">
+             <!--===================== 1 ======================-->
+         <div class="product grid">
+          
+          <a href="detail.html"><img src="image/1.png" alt="" class="product_img"></a>
+          <p class="fs-poppins bold-500 product_title">Apple Watch Series 9 [GPS + Cellular 41mm]</p>
+
+          <div class="shop-btn flex">
+            <button class="bg-red text-white fs-montserrat cart_btn">
+              Add To Cart
+            </button>
+            <p class="fs-poppins bold-500 product_price"> Nrs 55000.00</p>
+          </div>
+
+          <!--============================================-->
+
+          <div class="product-detail grid bg-red">
+            <i class="uil text-white uil-shopping-cart cart_btn"></i>
+            <i class="uil text-white uil-heart-sign"></i>
+
+          </div>
+          <!------------------------------------------------>
+
+         </div>
+            <!--===========================================-->
+
+             <!--===================== 2 ======================-->
+         <div class="product grid">
+         <a href="detail-1.html"> <img src="image/4.png" alt="" class="product_img"></a>
+          <p class="fs-poppins bold-500 product_title">Samsung Galaxy S24 Ultra</p>
+          <div class="shop-btn flex">
+            <button class="bg-red text-white fs-montserrat cart_btn">
+              Add To Cart
+            </button>
+            <p class="fs-poppins bold-500 product_price"> Nrs 1,84,999.00</p>
+          </div>
+          <!--============================================-->
+
+          <div class="product-detail grid bg-red">
+            <i class="uil text-white uil-shopping-cart cart_btn"></i>
+            <i class="uil text-white uil-heart-sign"></i>
+
+          </div>
+          <!------------------------------------------------>
+
+         </div>
+            <!--===========================================-->
+
+             <!--===================== 3 ======================-->
+         <div class="product grid">
+          <img src="image/a-18.png" alt="" class="product_img">
+          <p class="fs-poppins bold-500 product_title">I-phone 15 pro max</p>
+          <div class="shop-btn flex">
+            <button class="bg-red text-white fs-montserrat cart_btn">
+              Add To Cart
+            </button>
+          <p class="fs-poppins bold-500 product_price"> Nrs 1,90,500.00</p>
+          </div>
+          <!--============================================-->
+
+          <div class="product-detail grid bg-red">
+            <i class="uil text-white uil-shopping-cart cart_btn"></i>
+            <i class="uil text-white uil-heart-sign"></i>
+
+          </div>
+          <!------------------------------------------------>
+
+         </div>
+            <!--===========================================-->
+
+             <!--==================== 4 =======================-->
+         <div class="product grid">
+          <img src="image/3.png" alt="" class="product_img">
+          <p class="fs-poppins bold-500 product_title">JBL Tune 720BT</p>
+          <div class="shop-btn flex">
+            <button class="bg-red text-white fs-montserrat cart_btn">
+              Add To Cart
+            </button>
+          <p class="fs-poppins bold-500 product_price"> Nrs 9,900.00</p>
+          </div>
+          <!--============================================-->
+
+          <div class="product-detail grid bg-red">
+            <i class="uil text-white uil-shopping-cart cart_btn"></i>
+            <i class="uil text-white uil-heart-sign"></i>
+
+          </div>
+          <!------------------------------------------------>
+
+         </div>
+            <!--===========================================-->
+
+             <!--===================== 5 ======================-->
+         <div class="product grid">
+          <img src="image/7.png" alt="" class="product_img" >
+          <p class="fs-poppins bold-500 product_title">Apple MacBook Pro 16-inch (2021)</p>
+          <div class="shop-btn flex">
+            <button class="bg-red text-white fs-montserrat cart_btn">
+              Add To Cart
+            </button>
+          <p class="fs-poppins bold-500 product_price"> Nrs 3,25,900.00</p>
+          </div>
+          <!--============================================-->
+
+          <div class="product-detail grid bg-red">
+            <i class="uil text-white uil-shopping-cart cart_btn"></i>
+            <i class="uil text-white uil-heart-sign"></i>
+
+          </div>
+          <!------------------------------------------------>
+
+         </div>
+            <!--===========================================-->
+
+             <!--==================== 6 =======================-->
+         <div class="product grid">
+          <img src="image/9.png" alt="" class="product_img">
+          <p class="fs-poppins bold-500 product_title">L33T Gaming Headphone</p>
+          <div class="shop-btn flex">
+            <button class="bg-red text-white fs-montserrat cart_btn">
+              Add To Cart
+            </button>
+          <p class="fs-poppins bold-500 product_price"> Nrs 15,000.00</p>
+          </div>
+          <!--============================================-->
+
+          <div class="product-detail grid bg-red">
+            <i class="uil text-white uil-shopping-cart cart_btn"></i>
+            <i class="uil text-white uil-heart-sign"></i>
+
+          </div>
+          <!------------------------------------------------>
+
+         </div>
+            <!--===========================================-->
+
+             <!--=================== 7 ========================-->
+         <div class="product grid">
+          <img src="image/8.png" alt="" class="product_img">
+          <p class="fs-poppins bold-500 product_title">SAMSUNG GEAR VR </p>
+          <div class="shop-btn flex">
+            <button class="bg-red text-white fs-montserrat cart_btn">
+              Add To Cart
+            </button>
+          <p class="fs-poppins bold-500 product_price"> Nrs 1,20,000.00</p>
+          </div>
+          <!--============================================-->
+
+          <div class="product-detail grid bg-red">
+            <i class="uil text-white uil-shopping-cart cart_btn"></i>
+            <i class="uil text-white uil-heart-sign"></i>
+
+          </div>
+          <!------------------------------------------------>
+
+         </div>
+            <!--===========================================-->
+
+             <!--==================== 8 =======================-->
+         <div class="product grid">
+          <img src="image/30.png" alt="" class="product_img">
+          <p class="fs-poppins bold-500 product_title">Bluedio T2 Plus Turbine Wireless Bluetooth Headphones</p>
+          <div class="shop-btn flex">
+            <button class="bg-red text-white fs-montserrat cart_btn">
+              Add To Cart
+            </button>
+          <p class="fs-poppins bold-500 product_price"> Nrs 3,900.00</p>
+          </div>
+          <!--============================================-->
+
+          <div class="product-detail grid bg-red">
+            <i class="uil text-white uil-shopping-cart cart_btn"></i>
+            <i class="uil text-white uil-heart-sign"></i>
+
+          </div>
+          <!------------------------------------------------>
+
+         </div>
+            <!--===========================================-->
+
+             <!--==================== 9 =======================-->
+         <div class="product grid">
+          <img src="image/16.png" alt="" class="product_img">
+          <p class="fs-poppins bold-500 title-product_titler">Amazfit GTR 2E Smartwatch</p>
+          <div class="shop-btn flex">
+            <button class="bg-red text-white fs-montserrat cart_btn">
+              Add To Cart
+            </button>
+          <p class="fs-poppins bold-500 product_price"> Nrs 9,900.00</p>
+          </div>
+          <!--============================================-->
+
+          <div class="product-detail grid bg-red">
+            <i class="uil text-white uil-shopping-cart cart_btn"></i>
+            <i class="uil text-white uil-heart-sign"></i>
+
+          </div>
+          <!------------------------------------------------>
+
+         </div>
+            <!--===========================================-->
+
+             <!--==================== 10 =======================-->
+         <div class="product grid">
+          <img src="image/14.png" alt="" class="product_img">
+          <p class="fs-poppins bold-500 product_title">Dell XPS 15 9510 2021 (11th Gen i7-11800H)</p>
+          <div class="shop-btn flex">
+            <button class="bg-red text-white fs-montserrat cart_btn">
+              Add To Cart
+            </button>
+          <p class="fs-poppins bold-500 product_price"> Nrs 3,24,000.00</p>
+          </div>
+          <!--============================================-->
+
+          <div class="product-detail grid bg-red">
+            <i class="uil text-white uil-shopping-cart cart_btn"></i>
+            <i class="uil text-white uil-heart-sign"></i>
+
+          </div>
+          <!------------------------------------------------>
+
+         </div>
+            <!--===========================================-->
+
+             <!--==================== 11 =======================-->
+         <div class="product grid">
+          <img src="image/tab-1.png" alt="" class="product_img">
+          <p class="fs-poppins bold-500 product_titler">IPad Pro 12.9 (2022)</p>
+          <div class="shop-btn flex">
+            <button class="bg-red text-white fs-montserrat cart_btn">
+              Add To Cart
+            </button>
+          <p class="fs-poppins bold-500 product_price"> Nrs 1,99,900.00</p>
+          </div>
+          <!--============================================-->
+
+          <div class="product-detail grid bg-red">
+            <i class="uil text-white uil-shopping-cart cart_btn"></i>
+            <i class="uil text-white uil-heart-sign"></i>
+
+          </div>
+          <!------------------------------------------------>
+
+         </div>
+            <!--===========================================-->
+
+             <!--==================== 12 =======================-->
+         <div class="product grid">
+          <img src="image/10.png" alt="" class="product_img" >
+          <p class="fs-poppins bold-500 product_title">Dell XPS 15 9530</p>
+          <div class="shop-btn flex">
+            <button class="bg-red text-white fs-montserrat cart_btn">
+              Add To Cart
+            </button>
+          <p class="fs-poppins bold-500 product_price"> Nrs 1,50,900.00</p>
+          </div>
+          <!--============================================-->
+
+          <div class="product-detail grid bg-red">
+            <i class="uil text-white uil-shopping-cart cart_btn"></i>
+            <i class="uil text-white uil-heart-sign"></i>
+
+          </div>
+          <!------------------------------------------------>
+
+         </div>
+            <!--===========================================-->
+       </section>
+       <!---=========================== End Best Seller Product==============-->
+
+       <!--===================== feature section 2 ========================== -->
+
+       <section class="feature-section bg-green">
+        <div class="feature-green feature-one grid">
+          <img src="image/p12.png" alt="">
+          <p class="text-white uppercase">20% OFF </p>
+          <p class="font-size lineheight fs-600 lineheight2 text-white 
+          fs-poppins bold-900"> FINE <span class="smile">SMILE</span></p>
+          <p class="date text-white fs-poppins fs-50">13 April To 13 May</p>
+        </div>
+        <div class="feature-info">
+          <h2 class="fs-200 text-white fs-poppins bold-500">Beats Solo Air</h2>
+          <p class="fs-poppins text-white fs-300 bold-800">Summer Sale</p>
+          <p class="fs-montserrat text-white fs-50">Company that's grown from 270 to 480 employees
+             in the last 12 months.
+            </p>
+          <a href="watch.html"><button class="prodduct-btn large-btn text-green bg-white
+          fs-poppins">Shop</button></a>
+        </div>
+       </section>
+       <!--===================== End feature section 2 ========================== -->
+
+       <!-- ===================== Header Recent News ================= -->
+            
+       <section class="best-product container">
+        <h2 class="letter-spacing bold-bolder fs-300 fs-poppins">Recent News</h2>
+        <p class="fs-montserrat fs-100">There are many variation passages</p>
+       </section>
+
+       <section class="recent-news grid">
+
+        <!-- ==================== 1 ===================== -->
+          <div class="news grid">
+            <img src="image/news-8.jpg" alt="">
+
+            <div class="date padding-inline fs-montserrat flex">
+              <p>October 5, 2021</p>
+              
+            </div>
+            <p class="fs-montserrat fs-100 flex padding-inline">By ecommmercestore3</p>
+            <h2 class="padding-inline fs-poppins fs-200 bold-600 ">Laptop buying guide: 8 essential tips to know before you buy</h2>
+
+            <p class="padding-inline fs-montserrat  fs-100">
+              Laptops are compact enough to carry with you, yet powerful enough 
+              to run demanding applications—
+            </p>
+             <a href="post4.html" class="fs-poppins bold-500">Read More</a>
+          </div>
+          <!-- ================================================= -->
+
+        <!-- ==================== 2 ===================== -->
+          <div class="news grid">
+            <img src="image/news-2.png" alt="">
+
+            <div class="date padding-inline fs-montserrat  flex">
+              <p>August 5, 2023</p>
+              
+            </div>
+            <p class="fs-montserrat fs-100 flex padding-inline">By ecommmercestore3</p>
+            <h2 class="padding-inline fs-poppins fs-200 bold-600 ">6 Smartwatch Features to Look for when Getting a New Smart Watch</h2>
+
+            <p class="padding-inline fs-montserrat  fs-100">
+              Given the sheer amount of features present in smart watches, 
+              figuring out which one works best—
+            </p>
+            <a href="post2.html" class="fs-poppins bold-500">Read More</a>
+          </div>
+          <!-- ================================================= -->
+
+        <!-- ==================== 3 ===================== -->
+          <div class="news grid">
+            <img src="image/OIP.jpg" alt="">
+
+            <div class="date padding-inline fs-montserrat flex">
+              <p>January 5, 2022</p>
+              
+            </div>
+            <p class="fs-montserrat fs-100 flex padding-inline">By ecommmercestore3</p>
+            <h2 class="padding-inline fs-poppins fs-200 bold-600 ">Noise-canceling headphones that pair big sound with sweet silence</h2>
+
+            <p class="padding-inline fs-montserrat  fs-100">
+              I never thought I’d need a pair of serious noise-canceling headphones. 
+              I don’t mind hours of droning white noise on—</p>
+            <a href="post3.html" class="fs-poppins bold-500">Read More</a>
+          </div>
+          <!-- ================================================= -->
+       </section>
+
+       <!-- ===================== Header Recent News ================= -->
+
+       <!-- ======================= Brand Section ===================== -->
+
+       <section class="brands grid">
+        <!------------ 1 ---------->
+        <div>
+          <img src="image/br-1.png" alt="">
+        </div>
+         <!----------- 2 ---------------->
+        <div>
+          <img src="image/br-2.png" alt="">
+        </div>
+          <!-------------- 3 -------------->
+        <div>
+          <img src="image/br-3.png" alt="">
+        </div>
+          <!-- ------------ 4 ------------ -->
+        <div>
+          <img src="image/br-4.png" alt="">
+        </div>
+           <!------------- 5 ----------------->
+        <div>
+          <img src="image/br-5.png" alt="">
+        </div>
+
+       </section>
+
+       <!-- ======================= End Brand Section ===================== -->
+
+       <!--========================= Footer Section ======================= -->
+
+       <section class="footer grid">
+        <div class="footer-logo grid">
+          <a href="home.html"><img src="image/logo.png" alt=""></a>
+          <p class="fs-montserrat fs-100"> There are many variation passages of Lorem Ipsum available,
+            but the majority have </p>
+        
+        <div class="social-media flex">
+          <a href="https://www.facebook.com/login.php/"><i class="uil uil-facebook-f"></i></a>
+          <a href="https://www.instagram.com/"><i class="uil uil-instagram"></i></a>
+          <a href="https://twitter.com/"><i class="uil uil-twitter"></i></a>
+          <a href="https://www.linkedin.com/"><i class="uil uil-linkedin"></i></a>
+        </div>
+        </div>
+
+          <div class="footer-menu grid">
+            <h3 class="fs-poppins fs-200 bold-800">Quick link</h3>
+            <ul>
+            <li><a class="fs-montserrat text-black fs-100" href="#">Home</a></li>
+            <li><a class="fs-montserrat text-black fs-100" href="about.html">About</a></li>
+            <li><a class="fs-montserrat text-black fs-100" href="shop.html">Shop</a></li>
+            <li><a class="fs-montserrat text-black fs-100" href="blog.html">Blog</a></li>
+            <li><a class="fs-montserrat text-black fs-100" href="contact.html">Contact</a></li>
+          </ul>
+          </div>
+           
+          <div class="contact grid">
+            <h3 class="fs-poppins fs-200 bold-800">Contact</h3>
+            <p class="fs-montserrat">+971 (0) 101 0000 888 Patricia C. Amedee 4401 Waldeck
+              Street Grapevine Nashville, TX 76051
+            </p>
+          </div>
+
+          <div class="emails grid">
+            <h3 class="fs-poppins fs-200 bold-800">Subscribe To Our Email</h3>
+            <p class="update fs-poppins fs-300 bold-800">For Lastest News And Updates</p>
+          
+          
+          <div class="inputfield flex bg-gray">
+            <input type="email" placeholder="Enter Your Email" 
+            class="fs-montserrat bg-gray">
+            <button class="bg-red  text-white fs-poppins fs-50">Subscribe</button>
+          </div>
+        </div>
+       </section>
+       <!--========================= End Footer Section ======================= -->
+
+       <!-- ======================== Copy Right Section ====================== -->
+
+       <section class="copyright">
+          <p class="c-font fs-montserrat fs-100">© 2021 eStore. All rights
+            reserved</p>
+            <p class="fs-montserrat fs-100 text-align p-top">
+              Privacy Policy . Terms and condition </p>
+       </section>
+       <!-- ======================== End Copy Right Section ====================== -->
+         
+       <!-- ================pop up=================== -->
+       <div class="popup hide-popup ">
+        <div class="popup-content">
+          <div class="popup-close">
+            <i class="uil uil-times"></i>
+          </div>
+          <div class="popup-left">
+            <div class="popup-img-container">
+              <img class="popup-img" src="image/popup.jpg" alt="">
+            </div>
+          </div>
+          <div class="popup-right">
+            <div class="right-content">
+              <h1 class="fs-poppins">Get Discount <span>50%</span> off</h1>
+              <p class="fs-montserrat">Sign up to our PHLOX and save 30% for your next purchase.
+                No spam, we promise </p>
+                <form action="#">
+                  <input type="email" placeholder="Your Email Address.." class="popup-form fs-montserrat">
+                  <a href="" class="fs-montserrat ">Subscribe</a> 
+                </form>
+            </div>
+          </div>
+        </div>
+       </div>
+  </body>
+</html>
+ 

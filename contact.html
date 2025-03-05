@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===============Google fonts============= -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&
+    family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <!--===========Google fonts======================-->
+
+    <!-- ================== Icon Scout======================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+     <!-- ================== Icon Scout======================-->
+
+     <link rel="stylesheet" href="home.css">
+     <link rel="stylesheet" href="shop.css">
+     <link rel="stylesheet" href="about.css">
+     <link rel="stylesheet" href="blog.css">
+     <link rel="stylesheet" href="contact.css">
+     <script src="home.js" defer></script>
+     <script src="about.js" defer></script>
+     <script src="shop.js" defer></script>
+     <title>E-commerce Websites</title>
+</head>
+<body class="home">
+     <!--=============Start Header Section=============================-->
+    <header class="primary-header container flex">
+        <div class="header-inner-one flex">
+            <div class="logo-container">
+                <a href="home.html"><img src="image/Logo.png" alt="" id="logo"></a>
+            </div>
+            <button class="mobile-close-btn" data-visible="false"
+            aria-controls="primary-navigation"><i class="uil 
+            uil-times-circle"></i></button>
+            <nav>
+                <ul id="primary-navigation" data-visible="false" 
+                class="primary-navigation flex" >
+                <li><a class="fs-100 fs-montserrat bold-500" href="/home.html">Home</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/shop.html">Shop</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/about.html">Abouts Us</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/blog.html">Blog</a></li>
+                <li><a class="active fs-100 fs-montserrat bold-500" href="/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-login flex">
+
+          
+          
+          <i class="search uil uil-search" id="search-btn"></i>
+          
+          <i id="cart-icon" class="uli uil-shopping-bag"></i>
+          <div class="number">0</div>
+            <header>
+              <nav class="navbar">
+                  <button class="login-btn  fs-montserrat">LOG IN</button>
+              </nav>
+          </header>
+           </div>
+
+           <form class="search-form">
+            <input type="text" id="search-box" name="Search" placeholder="Search..." class="fs-montserrat"/>
+            <label for="search-box"  class="uil uil-search "></label>
+          </form>
+            <!--================ login section========================== -->
+            
+      
+          <div class="blur-bg-overlay"></div>
+          <div class="form-popup">
+              <span class="close-btn material-symbols-rounded"><i class="uil uil-times"></i></span>
+              <div class="form-box login fs-poppins">
+                  <div class="form-details">
+                      <h2>Welcome Back</h2>
+                      <p class="fs-montserrat">Please log in using your personal information to stay connected with us.</p>
+                  </div>
+                  <div class="form-content">
+                      <h2>LOGIN</h2>
+                      <form action="#">
+                          <div class="input-field">
+                              <input type="text" required>
+                              <label>Email</label>
+                          </div>
+                          <div class="input-field">
+                              <input type="password" required>
+                              <label>Password</label>
+                          </div>
+                          <a href="#" class="forgot-pass-link">Forgot password?</a>
+                          <button type="submit">Log In</button>
+                      </form>
+                      <div class="bottom-link">
+                          Don't have an account?
+                          <a href="#" id="signup-link">Signup</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="form-box signup fs-poppins">
+                  <div class="form-details ">
+                      <h2>Create Account</h2>
+                      <p class="fs-montserrat">To become a part of our community, please sign up using your personal information.</p>
+                  </div>
+                  <div class="form-content">
+                      <h2>SIGNUP</h2>
+                      <form action="#">
+                          <div class="input-field">
+                              <input type="text" required>
+                              <label>Enter your email</label>
+                          </div>
+                          <div class="input-field">
+                              <input type="password" required>
+                              <label>Create password</label>
+                          </div>
+                          <div class="policy-text">
+                              <input type="checkbox" id="policy">
+                              <label for="policy">
+                                  I agree the
+                                  <a href="#" class="option">Terms & Conditions</a>
+                              </label>
+                          </div>
+                          <button type="submit">Sign Up</button>
+                      </form>
+                      <div class="bottom-link">
+                          Already have an account? 
+                          <a href="#" id="login-link">Login</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+            <!--================ END login section========================== -->
+            <!--===========================================================-->
+
+               <!-- CART BOX -->
+
+               <div class="cart">
+                  
+                <h2 class="cart-title fs-poppins">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content">
+                  <!-- text-box -->
+                  <div class="cart-box">
+                    <img src="image/1.png" class="cart-img" alt="">
+                    <div class="deatil-box">
+                      <div class="cart-product-title fs-poppins">Watch</div>
+                      <div class="cart-price fs-montserrat"> Nrs 44000.00</div>
+                      <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <!-- remove cart -->
+                    <i class="uil uil-trash cart-remove"></i>
+                  </div>
+                </div>
+                <!-- total -->
+                <div class="total">
+                <div class="total-title fs-poppins">Total</div>
+                <div class="total-price fs-montserrat">Nrs 0</div>
+                </div>
+                
+                <!-- buy button -->
+                <button type="button" class="buy-btn fs-poppins">Buy Now</button>
+
+                <!-- cart close -->
+                <i id="cart-close" class="uil uil-times"></i>
+
+                
+         </div> 
+                <!--============================================================-->
+        </div>
+          <div class="mobile-open-btn">
+          <i class="uil uil-align-right"></i>
+        </div>
+    </header>
+        <!--=============End Header Section=============================-->
+
+
+         <!--================= contact feature section 1 ================-->
+         <section class="shop-feature bg-gray grid">
+
+            <div>
+            <p class="fs-montserrat text-black">Home 
+                <span aria-haspopup="true" class="margin">></span>Contact
+            </p>
+        </div>
+            
+            <h2 class="fs-poppins fs-30 bold-700">Contact Us</h2>
+        </section>
+     <!--================= END contact feature section ================-->
+
+     <!-- ================contact Section ================= -->
+
+           <section class="contact-us grid">
+            <div class="contact-info">
+                <div>
+                    <h1 class="fs-poppins text-red fs-200">Contact Us</h1>
+                    <h3 class="fs-poppins text-black fs-400">Get In Touch</h3>
+                    <p class="fs-montserrat fs-100">When, while lovely valley teems with vapour
+                        around me and moridian the upper impenetrable.
+                    </p>
+                </div>
+                <form action="#" class="contact-form grid">
+                    <div class="grid">
+                    <input type="email" class="bg-gray text-black fs-poppins"
+                    placeholder="Your E-mail">
+                </div>
+
+                    <div class="grid">
+                    <input type="text" class="bg-gray text-black fs-poppins"
+                    placeholder="Phone Number">
+                </div>
+
+                <div>
+                    <textarea  class="bg-gray text-black fs-poppins" rows="10"  placeholder="Your Massage Here"></textarea>
+                </div>
+            </form>
+        
+                <div class="contact-btn">
+                    <button class="large-btn bg-red text-white fs-poppins"> Submit </button>
+                </div>
+            </div>
+                <!--=============== Map================= -->
+
+                <div>
+                    <div class="map">
+                        <h4 class="fs-poppins fs-200 text-red">Google Maps API Key Is Missing</h4>
+                        <p class="fs-montserrat fs-100">In order to use Google Maps on our website,
+                            we have to create an api key and insert it in 
+                            customizer "Google Maps API Key" field.
+                        </p>
+                    </div>
+                </div>
+            
+    
+           </section>
+
+           <!--=============== support information============ -->
+
+           <section class="support-container grid">
+
+            <!-- ---------1------------- -->
+            <div class="support-info">
+                <div class="support-img">
+                    <img src="image/sup-1.svg" alt="">
+                </div>
+                <div>
+                    <p class="fs-100 fs-poppins">
+                        <span class="fs-200 fs-poppins bold-700">E-mail : </span>Info@yourdomain.com
+                    </p>
+                    <p class="fs-poppins fs-100">info@sampemail.com</p>
+                </div>
+            </div>
+
+            <!-- ---------2------------- -->
+            <div class="support-info">
+                <div class="support img">
+                    <img src="image/sup-2.svg" alt="">
+                </div>
+                <div>
+                    <p class="fs-100 fs-poppins">
+                        <span class="fs-200 fs-poppins bold-700">Phone : </span>+977 (0) 101 0000 888
+                    </p>
+                    <p class="fs-poppins fs-100">info@sampemail.com</p>
+                </div>
+            </div>
+
+            <!-- ---------3------------- -->
+            <div class="support-info">
+                <div class="support img">
+                    <img src="image/sup-3.svg" alt="">
+                </div>
+                <div>
+                    <p class="fs-100 fs-poppins">
+                        <span class="fs-200 fs-poppins bold-700">Address : </span>Patricia C. 4401 Waldeck
+                    </p>
+                    <p class="fs-poppins fs-100">Street Grapevine Nashville Tx 76051 </p>
+                </div>
+            </div>
+           </section>
+
+     <!-- ================End contact Section ================= -->
+
+
+         <!-- ======================= Brand Section ===================== -->
+
+       <section class="brands grid">
+        <!------------ 1 ---------->
+        <div>
+          <img src="image/br-1.png" alt="">
+        </div>
+         <!----------- 2 ---------------->
+        <div>
+          <img src="image/br-2.png" alt="">
+        </div>
+          <!-------------- 3 -------------->
+        <div>
+          <img src="image/br-3.png" alt="">
+        </div>
+          <!-- ------------ 4 ------------ -->
+        <div>
+          <img src="image/br-4.png" alt="">
+        </div>
+           <!------------- 5 ----------------->
+        <div>
+          <img src="image/br-5.png" alt="">
+        </div>
+
+       </section>
+
+
+
+
+       <!--========================= Footer Section ======================= -->
+
+       <section class="footer grid">
+        <div class="footer-logo grid">
+          <a href="home.html"><img src="image/logo.png" alt=""></a>
+          <p class="fs-montserrat fs-100"> There are many variation passages of Lorem Ipsum available,
+            but the majority have </p>
+        
+        <div class="social-media flex">
+          <a href="https://www.facebook.com/login.php/"><i class="uil uil-facebook-f"></i></a>
+          <a href="https://www.instagram.com/"><i class="uil uil-instagram"></i></a>
+          <a href="https://twitter.com/"><i class="uil uil-twitter"></i></a>
+          <a href="https://www.linkedin.com/"><i class="uil uil-linkedin"></i></a>
+        </div>
+        </div>
+
+          <div class="footer-menu grid">
+            <h3 class="fs-poppins fs-200 bold-800">Quick link</h3>
+            <ul>
+            <li><a class="fs-montserrat text-black fs-100" href="home.html">Home</a></li>
+            <li><a class="fs-montserrat text-black fs-100" href="about.html">About</a></li>
+            <li><a class="fs-montserrat text-black fs-100" href="shop.html">Shop</a></li>
+            <li><a class="fs-montserrat text-black fs-100" href="blog.html">Blog</a></li>
+            <li><a class="fs-montserrat text-black fs-100" href="#">Contact</a></li>
+          </ul>
+          </div>
+           
+          <div class="contact grid">
+            <h3 class="fs-poppins fs-200 bold-800">Contact</h3>
+            <p class="fs-montserrat">+971 (0) 101 0000 888 Patricia C. Amedee 4401 Waldeck
+              Street Grapevine Nashville, TX 76051
+            </p>
+          </div>
+
+          <div class="emails grid">
+            <h3 class="fs-poppins fs-200 bold-800">Subscribe To Our Email</h3>
+            <p class="update fs-poppins fs-300 bold-800">For Lastest News And Updates</p>
+          
+          
+          <div class="inputfield flex bg-gray">
+            <input type="email" placeholder="Enter Your Email" 
+            class="fs-montserrat bg-gray">
+            <button class="bg-red  text-white fs-poppins fs-50">Subscribe</button>
+          </div>
+        </div>
+       </section>
+       <!--========================= End Footer Section ======================= -->
+
+       <!-- ======================== Copy Right Section ====================== -->
+
+       <section class="copyright">
+          <p class="c-font fs-montserrat fs-100">© 2021 eStore. All rights
+            reserved</p>
+            <p class="fs-montserrat fs-100 text-align p-top">
+              Privacy Policy . Terms and condition </p>
+       </section>
+       <!-- ======================== End Copy Right Section ====================== -->
+  </body>
+</html>
+ 

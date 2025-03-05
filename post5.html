@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===============Google fonts============= -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&
+    family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <!--===========Google fonts======================-->
+
+    <!-- ================== Icon Scout======================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+     <!-- ================== Icon Scout======================-->
+
+     <link rel="stylesheet" href="home.css">
+     <link rel="stylesheet" href="shop.css">
+     <link rel="stylesheet" href="about.css">
+     <link rel="stylesheet" href="blog.css">
+     <link rel="stylesheet" href="post.css">
+     <script src="home.js" defer></script>
+     <title>E-commerce Websites</title>
+</head>
+<body class="home">
+     <!--=============Start Header Section=============================-->
+    <header class="primary-header container flex">
+        <div class="header-inner-one flex">
+            <div class="logo-container">
+                <a href="home.html"><img src="image/Logo.png" alt="" id="logo"></a>
+            </div>
+            <button class="mobile-close-btn" data-visible="false"
+            aria-controls="primary-navigation"><i class="uil 
+            uil-times-circle"></i></button>
+            <nav>
+                <ul id="primary-navigation" data-visible="false" 
+                class="primary-navigation flex" >
+                <li><a class="fs-100 fs-montserrat bold-500" href="/home.html">Home</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/shop.html">Shop</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/about.html">Abouts Us</a></li>
+                <li><a class="active fs-100 fs-montserrat bold-500" href="/blog.html">Blog</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-login flex">
+
+          
+          
+          <i class="search uil uil-search" id="search-btn"></i>
+          
+          <i id="cart-icon" class="uli uil-shopping-bag"></i>
+          <div class="number">0</div>
+            <header>
+              <nav class="navbar">
+                  <button class="login-btn  fs-montserrat">LOG IN</button>
+              </nav>
+          </header>
+           </div>
+
+           <form class="search-form">
+            <input type="text" id="search-box" name="Search" placeholder="Search..." class="fs-montserrat"/>
+            <label for="search-box"  class="uil uil-search "></label>
+          </form>
+            <!--================ login section========================== -->
+            
+      
+          <div class="blur-bg-overlay"></div>
+          <div class="form-popup">
+              <span class="close-btn material-symbols-rounded"><i class="uil uil-times"></i></span>
+              <div class="form-box login fs-poppins">
+                  <div class="form-details">
+                      <h2>Welcome Back</h2>
+                      <p class="fs-montserrat">Please log in using your personal information to stay connected with us.</p>
+                  </div>
+                  <div class="form-content">
+                      <h2>LOGIN</h2>
+                      <form action="#">
+                          <div class="input-field">
+                              <input type="text" required>
+                              <label>Email</label>
+                          </div>
+                          <div class="input-field">
+                              <input type="password" required>
+                              <label>Password</label>
+                          </div>
+                          <a href="#" class="forgot-pass-link">Forgot password?</a>
+                          <button type="submit">Log In</button>
+                      </form>
+                      <div class="bottom-link">
+                          Don't have an account?
+                          <a href="#" id="signup-link">Signup</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="form-box signup fs-poppins">
+                  <div class="form-details">
+                      <h2>Create Account</h2>
+                      <p class="fs-montserrat">To become a part of our community, please sign up using your personal information.</p>
+                  </div>
+                  <div class="form-content">
+                      <h2>SIGNUP</h2>
+                      <form action="#">
+                          <div class="input-field">
+                              <input type="text" required>
+                              <label>Enter your email</label>
+                          </div>
+                          <div class="input-field">
+                              <input type="password" required>
+                              <label>Create password</label>
+                          </div>
+                          <div class="policy-text">
+                              <input type="checkbox" id="policy">
+                              <label for="policy">
+                                  I agree the
+                                  <a href="#" class="option">Terms & Conditions</a>
+                              </label>
+                          </div>
+                          <button type="submit">Sign Up</button>
+                      </form>
+                      <div class="bottom-link">
+                          Already have an account? 
+                          <a href="#" id="login-link">Login</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+            <!--================ END login section========================== -->
+            <!--===========================================================-->
+
+               <!-- CART BOX -->
+
+               <div class="cart">
+                  
+                <h2 class="cart-title fs-poppins">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content">
+                  <!-- text-box -->
+                  <div class="cart-box">
+                    <img src="image/1.png" class="cart-img" alt="">
+                    <div class="deatil-box">
+                      <div class="cart-product-title fs-poppins">Watch</div>
+                      <div class="cart-price fs-montserrat"> Nrs 44000.00</div>
+                      <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <!-- remove cart -->
+                    <i class="uil uil-trash cart-remove"></i>
+                  </div>
+                </div>
+                <!-- total -->
+                <div class="total">
+                <div class="total-title fs-poppins">Total</div>
+                <div class="total-price fs-montserrat">Nrs 0</div>
+                </div>
+                
+                <!-- buy button -->
+                <button type="button" class="buy-btn fs-poppins">Buy Now</button>
+
+                <!-- cart close -->
+                <i id="cart-close" class="uil uil-times"></i>
+
+                
+         </div> 
+                <!--============================================================-->
+        </div>
+          <div class="mobile-open-btn">
+          <i class="uil uil-align-right"></i>
+        </div>
+    </header>
+        <!--=============End Header Section=============================-->
+
+        <!--========================== Post section ======================================= -->
+
+        <section id="blog-container">
+            <div class="blogs">
+                <div class="post">
+                     <p class="fs-montserrat date"> October 5, 2024</p>
+                     <h1 class="fs-poppins"> How to choose perfect Gadgets for you ?</h1>
+                    <img src="image/news-9.jpg" alt="">
+                    
+                    <br>
+                    <h2 class="heading"><ol class="fs-poppins" type="I"><li>Introduction</li></ol></h1>
+                        <br>
+                    <h2><ol class="fs-poppins" type="A"><li>
+                        Feeling overwhelmed by the sheer number of gadgets in the market? Don't worry, we're here to help you out.
+                    </li></ol></h2>
+                    <br>
+                    <p class="fs-montserrat"> Whoa, slow down! We know how tempting it is to get your hands on the latest and 
+                        greatest gadgets out there, but with so many options available, it's easy to feel lost. 
+                        Fear not, fellow tech aficionado, because we've got your back! In this guide, we'll take you on a journey 
+                        to help you navigate the vast ocean of gadgets and find the perfect ones tailored to your needs and budget.</p>
+                     <br>
+                     <h2><ol class="fs-poppins" type="A" start="2"><li>
+                        Together, we'll explore the world of gadgets and find the perfect ones tailored to your needs and budget. Excited? Let's dive in!
+                    </li></ol></h2>
+                    <br>
+                    <p class="fs-montserrat">Put on your explorer's hat and buckle up, because we're about to embark on an 
+                        adventure of discovery. From identifying your gadget needs to setting a realistic budget, comparing 
+                        features, and making the most of warranties, we've got all the tips and tricks you'll need to make 
+                        your gadget shopping experience a breeze. So, grab a cup of chai, get comfy, and let's get started!</p>
+                    <br>
+                      <ul class="points fs-montserrat">
+                        <li><p><b>Discover your gsdget needs:</b>  We'll help you figure out which gadgets are essential for your lifestyle and interests.</p></li>
+                        <br>
+                        <li><p><b>Set a realistic budget:</b> Don't worry, we'll teach you how to prioritize your wishlist and find the best deals.</p></li>
+                        <br>
+                        <li><p><b>Compare features and spaces:</b> Learn to make informed decisions by comparing gadgets like a pro.</p></li>
+                        <br>
+                        <li><p><b>Time your purchases right:</b>   We'll show you when to buy your gadgets for maximum savings.</p></li>
+                        <br>
+                        <li><p><b>Understand warranties and support:</b> Get to know the ins and outs of gadget warranties and customer support options.</p></li>
+                        
+                        
+                      </ul>
+                      <br>
+                      <p class="fs-montserrat">Are you ready to become a gadget-savvy shopper and find the perfect devices for your needs and budget? Let's get started!</p>
+                      <br>
+                      <h2 class="heading"><ol class="fs-poppins" type="I" start="2"><li> Identifying Your Gadget Needs</li></ol></h1>
+                        <br>
+                        <h2><ol class="fs-poppins" type="A"><li>
+                         First things first, let's think about your lifestyle and daily requirements to figure out which gadgets are essential for you.
+                      </li></ol></h2>
+                      <br>
+                    <p class="fs-montserrat">Before we start splurging on gadgets, let's take 
+                      a step back and evaluate our needs. Consider your daily routine, work demands, 
+                      and personal interests. To make this process more manageable, grab a pen and paper 
+                      (or go digital with a note-taking app) and jot down the following:</p>
+                     <br>
+                      <ul class="fs-montserrat points">
+                        <li><p><b>Work-related needs:</b> What gadgets do you require for your job? Laptops, smartphones, or maybe a tablet?</p></li><br>
+                        <li><p><b>Communication:</b> Which devices help you stay connected with friends, family, and colleagues ? A smartphone, smartwatch, or a good old-fashioned landline?</p></li><br>
+                        <li><p><b>Entertainment:</b> How do you like to unwind? Streaming shows on a smart TV, jamming to your favourite tunes on a Bluetooth speaker, or immersing yourself in a good book on an e-reader?</p></li>
+                      </ul>
+                      <br>
+                      <h2><ol class="fs-poppins" type="A" start="2"><li>
+                        We'll help you distinguish between the gadgets you absolutely need and the ones that are just nice to have.
+                     </li></ol></h2>
+                     <br>
+                     <p class="fs-montserrat">Now that you've got a list of potential gadgets, 
+                      it's time for some tough love. Let's prioritize your list by separating the 
+                      "must-haves" from the "nice-to-haves." Be honest with yourself – do you really need 
+                      that high-end gaming console, or would a budget-friendly option suffice?</p>
+                      <br>
+                      <p class="fs-montserrat">Asking yourself the following questions can help you make the distinction:</p>
+                      <br>
+                      <ol class="points fs-montserrat">
+                        <li>How often will i use this gadget?</li><br>
+                        <li>Is there a more affordable alternative that meets my needs?</li><br>
+                        <li>Will this gadget significantly improve my daily life or productivity?</li>
+                      </ol>
+                      <br>
+                      <h2><ol class="fs-poppins" type="A" start="3"><li>
+                        Don't forget to consider your hobbies and interests – after all, gadgets should be fun too!
+                     </li></ol></h2>
+                     <br>
+                    <p class="fs-montserrat">Gadgets aren't just about work and productivity – they should bring joy and 
+                      excitement to our lives! Think about your hobbies and interests and how gadgets can enhance these 
+                      experiences. Are you a budding photographer? Maybe investing in a quality camera is a wise move. 
+                      Or perhaps you're a fitness enthusiast who could benefit from a fitness tracker or smartwatch. Remember, 
+                      life's too short not to indulge in a little gadget-fueled fun!</p>
+                      <br>
+                      <h2 class="heading"><ol class="fs-poppins" type="I" start="3"><li>Setting a Realistic Budget</li></ol></h1>
+                        <br>
+                        <h2><ol class="fs-poppins" type="A"><li>
+                          Time to get real – let's assess your financial situation and set a 
+                          sensible budget for your gadget shopping spree.
+                       </li></ol></h2>
+                       <br>
+                       <p class="fs-montserrat">Alright, it's time to talk money. As exciting as it is 
+                        to envision yourself surrounded by shiny new gadgets, it's essential to stay grounded 
+                        in reality. Let's take a look at your current financial situation and determine a realistic 
+                        budget for your gadget purchases. Keep in mind your monthly expenses, savings goals, and any 
+                        upcoming financial commitments.</p>
+                        <br>
+                        <h2><ol class="fs-poppins" type="A" start="2"><li>
+                         We'll guide you on how to prioritize your gadget wishlist without
+                         breaking the bank.
+                       </li></ol></h2>
+                       <br>
+                       <p class="fs-montserrat">With a budget in place, it's time to get strategic
+                        with your gadget wishlist. To ensure you don't overspend, follow these simple steps:
+                       </p>
+                       <br>
+                       <ol class="fs-montserrat points">
+                        <li><p><b>Rank your gadgets:</b> Order your wishlist based on priority. Focus on the "must-haves" first and allocate your budget accordingly.</p></li><br>
+                        <li><p><b>Shop smart:</b> Look for sales, discounts, and bundled offers to stretch your budget further. Indian online marketplaces like Flipkart and Amazon often have great deals on gadgets.</p></li><br>
+                        <li><p><b>Consider refurbished or pre-owned:</b> Don't shy away from exploring refurbished or pre-owned options for more expensive gadgets, as they can offer significant savings.</p></li>
+                       </ol>
+                       <br>
+                       <h2><ol class="fs-poppins" type="A" start="3"><li>
+                        Psst! We've got some money-saving hacks and strategies up our sleeves to
+                        help you get more bang for your buck.
+                      </li></ol></h2>
+                      <br>
+                      <p class="fs-montserrat">Who doesn't love a good bargain? Here are some clever tips
+                        and tricks to help you save even more on your gadget purchases:
+                      </p>
+                      <br>
+                      <ul class="fs-montserrat points">
+                        <li><p><b>Wait it out:</b> If you can, hold off on buying newly launched gadgets. Prices tend to drop within a few months of release.</p></li><br>
+                        <li><p><b>Go for older models:</b> Opt for older or lower-tier model that still meets your needs. You'll be suprised at how much you can save!</p></li><br>
+                        <li><p><b>Subscribe to newsletters:</b> Sign up for newsletters from your favourite retailers or tech blogs to stay informed about upcoming sales and promotions. </p></li><br>
+                        <li><p><b>Use cashback apps and credit card rewards:</b> Leverage cashback apps and credit card rewards to earn additional discounts or cashback on your purchases.</p></li>
+                      </ul>
+                      <br>
+                      <p class="fs-montserrat">With these hacks in your arsenal, you're all set to score the best deals and make your gadget dreams come true!</p>
+                      <br>
+                      <h2 class="heading"><ol class="fs-poppins" type="I" start="4"><li>Researching and Comparing Gadgets</li></ol></h1>
+                      <br>
+                      <h2><ol class="fs-poppins" type="A" ><li>
+                        Ready to dive deep? We'll teach you how to find reliable sources for gadget reviews and master the art of online research.
+                      </li></ol></h2>
+                      <br>
+                      <p class="fs-montserrat">Now that you know your needs and have a budget in mind, it's time to 
+                        embark on the exciting journey of researching and comparing gadgets. But with so much 
+                        information out there, where do you start? Fear not, we've got you covered:</p>
+                      <br>
+                      <ul class="fs-montserrat points">
+                        <li><p><b>Trustworthy teach websites:</b>  Websites like <u class="blue">NDTV Gadgets 360</u> , <u class="blue">Digit</u> , and <u class="blue">91mobiles</u>  offer 
+                          in-depth reviews, comparisons, and news about the latest gadgets in the Indian market.</p></li><br>
+                        <li><p><b>Youtube channels:</b> Subscribe to popular Indian tech YouTube channels like <u class="blue">GeekyRanjit</u> , 
+                         <u class="blue">Technical Guruji</u> , and <u class="blue">C4ETech</u>  for hands-on reviews and unbiased opinions.</p></li><br>
+                        <li><p><b>Online forums and communities:</b> Online forums and communities: Engage with fellow gadget enthusiasts on forums like <u class="blue">Digit Geek</u>  
+                          and <u class="blue">XDA Developers</u>  to ask questions and gather insights from real users.</p></li>
+                      </ul>
+                      <br>
+                      <h2><ol class="fs-poppins" type="A" start="2"><li>
+                        Learn to compare features and specifications like a pro, and soon you'll be making informed decisions with ease.
+                      </li></ol></h2>
+                      <br>
+                      <p class="fs-montserrat">When comparing gadgets, keep these essential factors in mind:</p>
+                      <br>
+                      <ol class="fs-montserrat points">
+                        <li><p><b>Perfromance:</b> Compare processor speed, RAM, and storage options to gauge the overall performance of the gadget.</p></li><br>
+                        <li><p><b>Battery life:</b> Look for devices with longer battery life to keep you powered throughout the day.</p></li><br>
+                        <li><p><b>Display quality:</b> Consider factors like screen size, resolution, and display technology for the best viewing experience. </p></li><br>
+                        <li><p><b>Camera:</b>  Evaluate camera quality based on megapixels, aperture, and additional features like optical zoom and image stabilization.</p></li><br>
+                        <li><p><b>Additional features:</b> Don't forget to weigh the pros and cons of extra features like water resistance, expandable storage, and biometric security.</p></li>
+                      </ol>
+                      <br>
+                      <h2><ol class="fs-poppins" type="A" start="3"><li>
+                        Learn to compare features and specifications like a pro, and soon you'll be making informed decisions with ease.
+                      </li></ol></h2>
+                      <br>
+                      <p class="fs-montserrat">Don't be intimidated by all the tech-speak! Here's a quick guide to help you
+                        decipher some common technical terms:
+                      </p>
+                      <br>
+                      <ul class="fs-montserrat points">
+                        <li><p><b>Processor:</b> The brain of your gadget, responsible for executing tasks and applications.</p></li><br>
+                        <li><p><b>RAM (Random Access Memory):</b> Temporary storage that allows your device to run multiple applications at once.</p></li><br>
+                        <li><p><b>Resolution:</b> The number of pixels displayed on a screen, impacting the sharpness and clarity of images.</p></li><br>
+                        <li><p><b>Megapixels:</b>  A measure of camera resolution – more megapixels generally result in higher-quality photos.</p></li><br>
+                        <li><p><b>Aperture:</b> The size of the camera lens opening, affecting the amount of light that enters – a 
+                          lower number (e.g., f/1.8) means better low-light performance.</p></li><br>
+                        <li><p><b>Optical zoom:</b> A true zoom feature that allows you to get closer to your subject without losing image quality, 
+                          unlike digital zoom, which can reduce the image quality.</p></li><br>
+                        <li><p><b>Image stabilization:</b> A technology that helps reduce blurriness in photos and videos caused
+                           by shaky hands or moving subjects.</p></li><br>
+                        <li><p><b>Expandable storage:</b> A feature that allows you to increase your gadget's storage capacity using an 
+                          external memory card, like a microSD card.</p></li><br>
+                        <li><p><b>Water resistance:</b> The ability of a device to withstand water exposure for a certain period, usually 
+                          indicated by an IP (Ingress Protection) rating – the higher the number, the better the protection.</p></li><br>
+                        <li><p><b>Biometric security:</b> Security features that use your unique physical characteristics 
+                          (e.g., fingerprint, face recognition) for authentication and unlocking your gadget.</p></li>
+                      </ul>
+                      <br>
+                      <p class="fs-montserrat">Now that you're equipped with the knowledge to understand and compare gadgets, you're well on your way to making informed decisions and finding the perfect devices tailored to your needs and budget.</p>
+                      <br>
+                      <h2 class="heading"><ol class="fs-poppins" type="I" start="5"><li>Buying Gadgets Online vs Offline</li></ol></h1>
+                        <br>
+                        <h2><ol class="fs-poppins" type="A"><li>
+                          Let's weigh the pros and cons of shopping online and offline, so you know where to find the best deals.
+                        </li></ol></h2>
+                        <br>
+                        <p class="fs-montserrat">Choosing between online and offline shopping can be a tough decision. 
+                          Let's break it down and look at the advantages and disadvantages of both:</p>
+                          <br>
+                          <ul class="fs-montserrat points">
+                            <li><b>Online Shopping:</b></li><br>
+                            <li><p><b>Pros:</b> Wider selection, competitive prices, easy price comparison, convenience, and customer reviews.</p></li><br>
+                            <li><p><b>Cons:</b> Potential shipping delays, risk of scams or counterfeit products, and inability to physically examine the gadget before purchase.</p></li>
+                            <br>
+                            <li><b>Offline Shopping:</b></li><br>
+                            <li><p><b>Pros:</b> Hands-on experience with the gadget, instant gratification, personal assistance from the sales staff, and easier returns or exchanges.</p></li><br>
+                            <li><p><b>Cons:</b>  Limited selection, potentially higher prices, and time-consuming store visits.</p></li>
+                          </ul>
+                          <br>
+                          <h2><ol class="fs-poppins" type="A" start="2"><li>
+                            We'll share our secrets on finding trusted online retailers and local stores for your gadget purchases.
+                          </li></ol></h2>
+                          <br>
+                          <p class="fs-montserrat">When it comes to buying gadgets, you want to make sure you're shopping from a reliable source. Here are some tips:</p>
+                          <br>
+                          <ul class="fs-montserrat points">
+                            <li><p><b>Online Retailers:</b> Stick to well-known e-commerce platforms like <b>Amazon India</b> , <b>Flipkart</b> , and <b>Tata CLiQ</b> . 
+                              Don't forget to check the seller's ratings and reviews before purchasing.</p></li><br>
+                            <li><p><b>Local Stores:</b>  Look for authorized dealers and retailers, such as <b>Croma</b> , <b>Reliance Digital</b> , and <b>Vijay Sales</b> . It's also a good idea to ask friends and family for their recommendations.</p></li>
+                          </ul>
+                          <br>
+                          <h2><ol class="fs-poppins" type="A" start="3"><li>
+                            And of course, we'll guide you on how to shop safely and securely online.
+                          </li></ol></h2>
+                          <br>
+                          <p class="fs-montserrat">Online shopping can be a breeze if you keep a few safety tips in mind:</p>
+                          <br>
+                          <ol class="fs-montserrat points">
+                            <li><p><b>Secure connection:</b> Make sure the website has a secure connection (https://) and a padlock icon in the address bar.</p></li><br>
+                            <li><p><b>Payment options:</b> Opt for secure payment methods like credit cards, UPI, or trusted e-wallets. Avoid using debit cards or direct bank transfers.</p></li><br>
+                            <li><p><b>Privacy policies:</b> Take the time to read the website's privacy policy to understand how they handle your personal information.</p></li><br>
+                            <li><p><b>Customer reviews:</b> Read customer reviews and ratings of the seller to ensure they're reliable and trustworthy.</p></li>
+                          </ol>
+                          <br>
+                          <p class="fs-montserrat">With these tips in hand, you'll be well-equipped to make the best decisions when buying your gadgets, whether online or offline!</p>
+                          <br>
+                          <h2 class="heading"><ol class="fs-poppins" type="I" start="6"><li>Timing Your Gadget Purchases</li></ol></h1>
+                            <br>
+                            <h2><ol class="fs-poppins" type="A"><li>
+                              Timing is everything! We'll show you why it's important to time your gadget purchases just right.
+                            </li></ol></h2>
+                            <br>
+                            <p class="fs-montserrat"> Just like buying airline tickets or booking hotels, timing your gadget 
+                              purchases can save you a pretty penny. How, you ask? Well, it's all about knowing when new models are released, 
+                              seasonal sales, and other factors that influence gadget prices.</p>
+                            <br>
+                            <h2><ol class="fs-poppins" type="A" start="2"><li>
+                              Keep an eye out for festive sales, discounts, and promotions – we'll help you spot the best ones.
+                            </li></ol></h2>
+                            <br>
+                            <p class="fs-montserrat"> India is known for its festive spirit, and what better way to celebrate 
+                              than by snagging some great deals on gadgets? Here are some key sales events to look out for:  </p>
+                            <br>
+                            <ul class="fs-montserrat points">
+                              <li><p><b>Amazon Great Indian Festival</b> and <b>Flipkart Big Billion Days:</b>
+                                Usually held around October during the Diwali season, these sales offer massive discounts on a wide range of gadgets.</p></li><br>
+                              <li><p><b>Republic Day Sale</b> and <b>Independence Day Sale:</b>
+                                Keep an eye on major e-commerce platforms and retailers for discounts and offers during these national holidays.</p></li><br>
+                              <li><p><b>End-of-season sales:</b>
+                                Retailers often clear out inventory at the end of a season, which means you can score some sweet deals on gadgets.</p></li>
+                            </ul>
+                            <br>
+                            <h2><ol class="fs-poppins" type="A" start="3"><li>
+                              Together, we'll figure out the best times to buy different gadgets for maximum savings.
+                            </li></ol></h2>
+                            <br>
+                            <p class="fs-montserrat">
+                              Did you know that different gadgets have different optimal buying times? Let's take a look at some examples:
+                            </p>
+                            <br>
+                            <ul class="fs-montserrat points">
+                              <li><p><b>Smartphones:</b> Buy last year's flagship models when the new ones are released, 
+                                typically around September-October for Apple and February-March for Samsung.</p></li><br>
+                              <li><p><b>Laptops:</b>Look for deals during the back-to-school season (around June-July) and during festive sales.</p></li><br>
+                              <li><p><b>Cameras:</b> The best time to buy cameras is usually a few months after the 
+                                release of new models. You can also find discounts during festive sales and end-of-season clearance events.</p></li>
+                            </ul>
+                            <br>
+                            <p class="fs-montserrat">With these tips in mind, you'll be well on your way to becoming a savvy gadget shopper, ready to snag the best deals at the perfect time!</p>
+                            <br>
+                            <h2 class="heading"><ol class="fs-poppins" type="I" start="7"><li>Making the Most of Your Gadget Warranty and Support</li></ol></h1>
+                              <br>
+                              <h2><ol class="fs-poppins" type="A" start="1"><li>
+                                Warranty woes? we'll help you understand gadget warranties and choose the right protection for your needs.
+                              </li></ol></h2>
+                              <br>
+                              <p class="fs-montserrat">No one likes to think about their shiny new gadget going kaput,
+                                 but it's essential to understand the warranty coverage that comes with it. Typically, 
+                                 gadgets come with a <b>manufacturer's warranty</b> , which covers any manufacturing defects 
+                                 for a specified period (usually 1 year). Some brands even offer an <b>extended warranty</b>  
+                                 for an additional cost, which can provide extra peace of mind. Here's what to consider:</p>
+                              <br>
+                              <ul class="fs-montserrat points">
+                                <li><p><b>Warranty Duration:</b> Check the length of the warranty and weather it's worth extending.</p></li><br>
+                                <li><p><b>Warranty coverage:</b>  Be aware of what's covered under warranty and what's not (e.g., physical damage).</p></li><br>
+                                <li><p><b>Authorized service centers:</b> Make sure there's a service centre near you to avoid any hassles in case of issues.</p></li>
+                              </ul>
+                              <br>
+                              <h2><ol class="fs-poppins" type="A" start="2"><li>
+                                We'll also introduce you to customer support options and resources, so you know where to turn when you need help.
+                              </li></ol></h2>
+                              <br>
+                              <p class="fs-montserrat">When it comes to gadget support, knowing who to call can save you a lot of headache. Here's a rundown of support resources you should be aware of:</p>
+                              <br>
+                              <ul class="fs-montserrat points">
+                                <li><p><b>Manufacturer's support:</b>Most brands have dedicated customer support helplines or chat support on their websites. Save their contact details for quick access.</p></li><br>
+                                <li><p><b>Online forums:</b> Websites like <u class="blue">Techulator</u>  and <u class="blue">Digit Forum</u>  are great places to ask questions and get advice from fellow gadget enthusiasts and experts.</p></li><br>
+                                <li><p><b>Social media:</b> Many brands are active on social media platforms like Twitter and Facebook, where you can reach out for help or find useful tips and tricks.</p></li>
+                              </ul>
+                              <br>
+                              <h2><ol class="fs-poppins" type="A" start="3"><li>
+                                Plus, we'll teach you how to troubleshoot common gadget issues all by yourself!
+                              </li></ol></h2>
+                              <br>
+                              <p class="fs-montserrat">Who needs a superhero when you can be your own gadget saviour? 
+                                With some basic troubleshooting skills, you can resolve many common issues without breaking a sweat. Here are a few tips:</p>
+                              <br>
+                              <ul class="fs-montserrat points">
+                                <li><p><b>Restart:</b>  It might sound cliché, but turning your gadget off and on again can often fix minor glitches.</p></li><br>
+                                <li><p><b>Software updates:</b>  Keep your gadgets up to date with the latest software to ensure optimal performance and security.</p></li><br>
+                                <li><p><b>Online tutorials:</b> YouTube and other platforms are treasure troves of step-by-step guides for fixing common gadget issues.</p></li>
+                              </ul>
+                              <br>
+                              <p class="fs-montserrat">With these tips in hand, you'll be well-equipped to make the most of your gadget warranty and support, and even tackle some tech troubles on your own!</p>
+                              <br>
+
+
+
+
+                </div>
+                <a href="blog.html" class="fs-montserrat bold-500">Read Next</a>
+            </div>
+        </section>
+        <!--========================== End Post section ======================================= -->
+
+
+        <!-- ======================= Brand Section ===================== -->
+
+       <section class="brands grid">
+        <!------------ 1 ---------->
+        <div>
+          <img src="image/br-1.png" alt="">
+        </div>
+         <!----------- 2 ---------------->
+        <div>
+          <img src="image/br-2.png" alt="">
+        </div>
+          <!-------------- 3 -------------->
+        <div>
+          <img src="image/br-3.png" alt="">
+        </div>
+          <!-- ------------ 4 ------------ -->
+        <div>
+          <img src="image/br-4.png" alt="">
+        </div>
+           <!------------- 5 ----------------->
+        <div>
+          <img src="image/br-5.png" alt="">
+        </div>
+
+       </section>
+
+
+
+
+       <!--========================= Footer Section ======================= -->
+
+       <section class="footer grid">
+        <div class="footer-logo grid">
+          <a href="home.html"><img src="image/logo.png" alt=""></a>
+          <p class="fs-montserrat fs-100"> There are many variation passages of Lorem Ipsum available,
+            but the majority have </p>
+        
+        <div class="social-media flex">
+          <a href="https://www.facebook.com/login.php/"><i class="uil uil-facebook-f"></i></a>
+          <a href="https://www.instagram.com/"><i class="uil uil-instagram"></i></a>
+          <a href="https://twitter.com/"><i class="uil uil-twitter"></i></a>
+          <a href="https://www.linkedin.com/"><i class="uil uil-linkedin"></i></a>
+        </div>
+        </div>
+
+          <div class="footer-menu grid">
+            <h3 class="fs-poppins fs-200 bold-800">Quick link</h3>
+            <ul>
+            <li><a class="fs-montserrat text-black fs-100" href="home.html">Home</a></li>
+            <li><a class="fs-montserrat text-black fs-100" href="about.html">About</a></li>
+            <li><a class="fs-montserrat text-black fs-100" href="shop.html">Shop</a></li>
+            <li><a class="fs-montserrat text-black fs-100" href="#">Blog</a></li>
+            <li><a class="fs-montserrat text-black fs-100" href="contact.html">Contact</a></li>
+          </ul>
+          </div>
+           
+          <div class="contact grid">
+            <h3 class="fs-poppins fs-200 bold-800">Contact</h3>
+            <p class="fs-montserrat">+971 (0) 101 0000 888 Patricia C. Amedee 4401 Waldeck
+              Street Grapevine Nashville, TX 76051
+            </p>
+          </div>
+
+          <div class="emails grid">
+            <h3 class="fs-poppins fs-200 bold-800">Subscribe To Our Email</h3>
+            <p class="update fs-poppins fs-300 bold-800">For Lastest News And Updates</p>
+          
+          
+          <div class="inputfield flex bg-gray">
+            <input type="email" placeholder="Enter Your Email" 
+            class="fs-montserrat bg-gray">
+            <button class="bg-red  text-white fs-poppins fs-50">Subscribe</button>
+          </div>
+        </div>
+       </section>
+       <!--========================= End Footer Section ======================= -->
+
+       <!-- ======================== Copy Right Section ====================== -->
+
+       <section class="copyright">
+          <p class="c-font fs-montserrat fs-100">© 2021 eStore. All rights
+            reserved</p>
+            <p class="fs-montserrat fs-100 text-align p-top">
+              Privacy Policy . Terms and condition </p>
+       </section>
+       <!-- ======================== End Copy Right Section ====================== -->
+  </body>
+</html>
+ 

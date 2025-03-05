@@ -1,0 +1,118 @@
+
+#blog-container{
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    padding: 5vw;
+}
+
+#blog-container .blogs{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.blogs .post img{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+ 
+.blogs .post h1{
+        text-align: center;
+}
+
+.blogs .post p{
+    margin-left: 1rem;
+}
+
+.post .date{
+    text-align: center;
+}
+
+.blogs .post > img:hover{
+    box-shadow: 5px 5px 57px -6px hsl(var(--clr-black)/0.5);
+}
+
+.image{
+    box-shadow: none;
+}
+
+.points{
+    margin-left: 3rem;
+}
+
+.points .list{
+    margin-left: 3rem;
+}
+
+.blue{
+    color: hsl(var(--clr-red));
+}
+
+.number{
+    margin-left: 1.2rem;
+}
+
+.apple{
+    margin-left: 1rem;
+}
+
+.heading{
+    font-size: 2.5rem;
+}
+.blogs a{
+    text-decoration: none;
+    color: hsl(var(--clr-red)) ;
+    display: inline-block;
+    position: relative;
+    right: -0.7rem;
+    background-color: hsl(var(--clr-gray-light) / 0.9);
+    padding:  9px 15px;
+    width: 30%;
+    text-align: center;
+    border-radius: 2rem;
+    bottom: -1rem;
+    font-size: 0.9rem;
+}
+
+.blogs a:hover{
+    background-color: hsl(var(--clr-black));
+}
+
+/*========== for desktop========= */
+
+@media (min-width: 59em){
+    .blogs a{
+        width: 20%;
+        bottom: -1rem;
+    }
+
+    #blog-container .blogs{
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .blogs .post h1{
+        text-align: center;
+        font-size: 2.5rem;
+}
+
+
+
+}
+
+/*================ for ipad ============== */
+@media (min-width: 39em) and (max-width:59em) {
+    .blogs a{
+        width: 20%;
+        bottom: -1rem;
+    }
+    
+    .post .date{
+        text-align: center;
+        margin-top: -7rem;
+    }
+}
+
+
+

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===============Google fonts============= -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&
+    family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <!--===========Google fonts======================-->
+
+    <!-- ================== Icon Scout======================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- ================== Icon Scout======================-->
+
+     <!--======================= swiper css================================== -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+   />
+     <!--======================= swiper css================================== -->
+
+     <link rel="stylesheet" href="home.css">
+     <link rel="stylesheet" href="shop.css">
+     <link rel="stylesheet" href="detail.css">
+
+     <script src="home.js" defer></script>
+     <script src="detail.js" defer></script>
+
+     <title>E-commerce Websites</title>
+</head>
+<body class="home">
+ 
+  <!--=============Start Header Section=============================-->
+    <header class="primary-header container flex">
+        <div class="header-inner-one flex">
+            <div class="logo-container">
+                <a href="home.html"><img src="image/Logo.png" alt="" id="logo"></a>
+            </div>
+            <button class="mobile-close-btn" data-visible="false"
+            aria-controls="primary-navigation"><i class="uil 
+            uil-times-circle"></i></button>
+            <nav>
+                <ul id="primary-navigation" data-visible="false" 
+                class="primary-navigation flex" >
+                <li><a class="fs-100 fs-montserrat bold-500" href="/home.html">Home</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/shop.html">Shop</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/about.html">Abouts Us</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/blog.html">Blog</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-login flex">
+
+          
+          
+          <i class="search uil uil-search" id="search-btn"></i>
+          
+            <i id="cart-icon" class="uli uil-shopping-bag"></i>
+            <div class="number">0</div>
+            <header>
+              <nav class="navbar">
+                  <button class="login-btn  fs-montserrat">LOG IN</button>
+              </nav>
+          </header>
+           </div>
+
+           <form class="search-form">
+            <input type="text" id="search-box" name="Search" placeholder="Search..." class="fs-montserrat"/>
+            <label for="search-box"  class="uil uil-search "></label>
+          </form>
+            <!--================ login section========================== -->
+            
+      
+          <div class="blur-bg-overlay"></div>
+          <div class="form-popup">
+              <span class="close-btn material-symbols-rounded"><i class="uil uil-times"></i></span>
+              <div class="form-box login fs-poppins">
+                  <div class="form-details ">
+                      <h2>Welcome Back</h2>
+                      <p class="fs-montserrat">Please log in using your personal information to stay connected with us.</p>
+                  </div>
+                  <div class="form-content fs-poppins">
+                      <h2>LOGIN</h2>
+                      <form action="#">
+                          <div class="input-field">
+                              <input type="text" required>
+                              <label>Email</label>
+                          </div>
+                          <div class="input-field">
+                              <input type="password" required>
+                              <label>Password</label>
+                          </div>
+                          <a href="#" class="forgot-pass-link">Forgot password?</a>
+                          <button type="submit">Log In</button>
+                      </form>
+                      <div class="bottom-link">
+                          Don't have an account?
+                          <a href="#" id="signup-link">Signup</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="form-box signup fs-poppins">
+                  <div class="form-details">
+                      <h2>Create Account</h2>
+                      <p class="fs-montserrat">To become a part of our community, please sign up using your personal information.</p>
+                  </div>
+                  <div class="form-content">
+                      <h2>SIGNUP</h2>
+                      <form action="#">
+                          <div class="input-field">
+                              <input type="text" required>
+                              <label>Enter your email</label>
+                          </div>
+                          <div class="input-field">
+                              <input type="password" required>
+                              <label>Create password</label>
+                          </div>
+                          <div class="policy-text">
+                              <input type="checkbox" id="policy">
+                              <label for="policy">
+                                  I agree the
+                                  <a href="#" class="option">Terms & Conditions</a>
+                              </label>
+                          </div>
+                          <button type="submit">Sign Up</button>
+                      </form>
+                      <div class="bottom-link">
+                          Already have an account? 
+                          <a href="#" id="login-link">Login</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+            <!--================ END login section========================== -->
+            <!--===========================================================-->
+
+               <!-- CART BOX -->
+
+               <div class="cart">
+                  
+                <h2 class="cart-title fs-poppins">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content">
+                  <!-- text-box -->
+                  <div class="cart-box">
+                    <img src="image/1.png" class="cart-img" alt="">
+                    <div class="deatil-box">
+                      <div class="cart-product-title fs-poppins">Watch</div>
+                      <div class="cart-price fs-montserrat"> Nrs 44000.00</div>
+                      <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <!-- remove cart -->
+                    <i class="uil uil-trash cart-remove"></i>
+                  </div>
+                </div>
+                <!-- total -->
+                <div class="total">
+                <div class="total-title fs-poppins">Total</div>
+                <div class="total-price fs-montserrat">Nrs 0</div>
+                </div>
+                
+                <!-- buy button -->
+                <button type="button" class="buy-btn fs-poppins">Buy Now</button>
+
+                <!-- cart close -->
+                <i id="cart-close" class="uil uil-times"></i>
+
+                
+         </div> 
+                <!--============================================================-->
+        </div>
+          <div class="mobile-open-btn">
+          <i class="uil uil-align-right"></i>
+        </div>
+    </header>
+        <!--=============End Header Section=============================-->
+        
+     <!--================= contact feature section 1 ================-->
+     <section class="shop-feature bg-gray grid">
+
+        <div>
+        <p class="fs-montserrat text-black">Home 
+            <span aria-haspopup="true" class="margin">></span>Product
+            <span aria-haspopup="true" class="margin">></span>Detail
+        </p>
+    </div>
+        
+        <h2 class="fs-poppins fs-30 bold-700">SmartWatch</h2>
+    </section>
+ <!--================= END contact feature section ================-->
+
+ <!-- ======================= Details ===================== -->
+ <section class="details section--lg grid">
+    <div class="detail__container container grid">
+        <div class="details__groups grid">
+            <img src="image/a-39.png" alt="" class="details__img">
+
+            <div class="details__small-images1 grid">
+                <img src="image/a-39.png" alt="" class="details__small-img">
+                <img src="image/a-38.png" alt="" class="details__small-img">
+                <img src="image/a-40.png" alt="" class="details__small-img">
+                <img src="image/a-36.png" alt="" class="details__small-img">
+            </div>
+        </div>
+        <div class="details__group"> 
+            <h3 class="details__titls fs-poppins">Apple Watch Series 9 [GPS + Cellular 41mm] 
+                Smartwatch with Midnight Aluminum Case with Midnight Sport Band S/M. Fitness 
+                Tracker, ECG Apps, Always-On Retina Display</h3><br>
+            <p class="details__brand"><span class="fs-poppins bold-bolder">Brands:</span> <span class="apple fs-montserrat">Apple</span></p><br>
+
+            <div class="details__price flex">
+                <span class="new__price  fs-poppins bold-bolder"><span class="Money">Nrs र:</span> 44,000.00 /-</span>
+                <span class="old__price fs-poppins bold-bolder"><span class="Money">Nrs र:</span> 55,000.00</span>
+                <span class="save__price fs-poppins bold-bolder">20<span class="Money">% OFF</span></span>
+            </div><br>
+            <p class="short__description fs-montserrat">The Watch Series 9 is the long-anticipated smartwatch from Apple, which is finally official in Nepal. 
+                In terms of design, you don’t see major alterations. It is still encased in a square-shaped chassis in 41mm and 45mm in either 
+                aluminum or stainless steel cases.....
+            </p><br>
+
+            <ul class="product">
+                <li class="list__item flex fs-poppins">
+                   <h4>Key Specification</h4> 
+                </li> <br> 
+
+                <div class="specification grid">
+
+                <!-- 1 -->
+            <div class="first-specification">
+                <div class="attribute-image">             
+                    <img src="image/Watch-Icon.webp" alt="">
+                </div>  
+                <div class="attribute-title fs-poppins">
+                    <h4>Type</h4>
+                </div>
+                <div class="attribute-val-a fs-montserrat">
+                    <p>General</p>
+                </div>
+                </div>
+    
+                <!-- 2 -->
+                <div class="second-specification">
+                <div class="attribute-image">             
+                    <img src="image/Laptop-Icon.webp" alt="">
+                </div>  
+                <div class="attribute-title fs-poppins">
+                    <h4>Weight</h4>
+                </div>
+                <div class="attribute-val fs-montserrat">
+                    <p>32 gm / 39 gm / 43.2 gm / 51.5 gm</p>
+                </div>
+                </div>
+    
+                <!-- 3 -->
+                <div class="third-specification">
+                <div class="attribute-image">             
+                    <img src="image/Watch-Icon-Display.webp" alt="">
+                </div>  
+                <div class="attribute-title fs-poppins">
+                    <h4>Display</h4>
+                </div>
+                <div class="attribute-val fs-montserrat">
+                    <p>1.69 inches / 1.9 inches</p>
+                </div>
+                </div>
+    
+                <!-- 4 -->
+                <div class="fourth-specification">
+                <div class="attribute-image">             
+                    <img src="image/Smartphone-Icon-Battery.webp" alt="">
+                </div>  
+                <div class="attribute-title fs-poppins">
+                    <h4>Battery</h4>
+                </div>
+                <div class="attribute-val fs-montserrat">
+                    <p>282mAh / 308mAh</p>
+                </div><br>
+                </div>
+              
+            </div>
+         
+            </ul>
+            
+            <div class="details__color flex">
+                <span class="details__color-title fs-poppins">Color</span>
+                <ul class="color__list">
+                    <li>
+                        <a 
+                        href="#" 
+                        class="color__link" 
+                        style="background-color: hsl(var(--clr-red));"
+                        ></a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="color__link" 
+                        style="background-color:hsl(var(--clr-green));"></a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="color__link" 
+                        style="background-color:hsl(var(--clr-blue));"></a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="color__link" 
+                        style="background-color:hsl(var(--clr-yellow));"></a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="color__link" 
+                        style="background-color:hsl(var(--clr-gray));"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="details__size flex">
+                <span class="details__size-title fs-poppins">Size</span>
+                <ul class="size__list">
+                    <li>
+                        <a href="#" class="size__link fs-montserrat">S</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="size__link size-active fs-montserrat">M</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="size__link fs-montserrat">L</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="size__link fs-montserrat">XL</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="size__link fs-montserrat">XXL</a>
+                    </li>
+    
+                </ul>
+            </div>
+
+            <div class="details__action">
+                <input type="number" class="quantity fs-montserrat" value="3">
+
+                <a href="#" class="large-btn large-btn bg-red text-white fs-poppins">Add to cart </a>
+
+                <a href="#" class="details__action-btn">
+                    <i class="uil uil-heart"></i>
+                </a>
+            </div>
+
+            <ul class="details__meta">
+                <li class="meta__list flex fs-montserrat"><span class="fs-poppins bold-bolder">Model Name:</span>Apple Watch Series 9 (GPS + Cellular) </li>
+                <li class="meta__list flex fs-montserrat"><span class="fs-poppins bold-bolder">Data:</span> September 22, 2023</li>
+                <li class="meta__list flex fs-montserrat"><span class="fs-poppins bold-bolder">Status:</span> Available In Stock</li>
+                
+            </ul>
+        </div>
+       
+    </div>
+ </section>
+  <!-- ======================= End Details ===================== -->
+  
+
+ <!-- ========================== Detail tab ============================= -->
+
+ <section class="details__tab container">
+    <div class="details__tabs">
+        <span class="details__tab active-tab fs-poppins bold-bolder" data-target="#info">
+            Additional Info
+        </span>
+        <span class="details__tab fs-poppins bold-bolder" data-target="#reviews">Reviews(3)</span>
+    </div>
+
+    <div class="details__tabs-contents">
+        <div class="details__tab-content active-tab" content id="info">
+            <table class="info-table">
+              <tr>
+                <th class="fs-poppins">Case</th>
+                <td class="fs-montserrat">Size: 41mm, 45mm <br>
+                  Material: Aluminum, Stainless Steel</td>
+              </tr>
+
+              <tr>
+                <th class="fs-poppins">Strap</th>
+                <td class="fs-montserrat">Size: Custom <br>
+                  Material: Rubber, Textile, Stainless</td>
+              </tr>
+
+              <tr>
+                <th class="fs-poppins">Dimension</th>
+                <td class="fs-montserrat">41mm: 45 × 35 × 10.7mm <br>
+                  45mm: 45 × 38 × 10.7mm</td>
+              </tr>
+              
+              <tr>
+                <th class="fs-poppins">Weight</th>
+                <td class="fs-montserrat">41mm: 42.3 gm <br>
+                  45mm: 51.5 gm</td>
+              </tr>
+
+              <tr>
+                <th class="fs-poppins">Durability</th>
+                <td class="fs-montserrat">WR50 <br>
+                  IP6X certified against dust</td>
+              </tr>
+
+              <tr>
+                <th class="fs-poppins">Colors</th>
+                <td class="fs-montserrat">Starlight, Silver, Midnight</td>
+              </tr>
+
+              <tr>
+                <th class="fs-poppins">Size</th>
+                <td class="fs-montserrat">41mm: 1.69 inches <br>
+                  45mm: 1.9 inches</td>
+              </tr>
+
+              <tr>
+                <th class="fs-poppins">Type</th>
+                <td class="fs-montserrat">LTPO OLED</td>
+              </tr>
+
+              <tr>
+                <th class="fs-poppins">Resolution</th>
+                <td class="fs-montserrat">41mm: 352 x 430 pixels <br>
+                  45mm: 396 x 484 pixels</td>
+              </tr>
+
+              <tr>
+                <th class="fs-poppins">Protection</th>
+                <td class="fs-montserrat">Sapphire crystal glass</td>
+              </tr>
+
+              <tr>
+                <th class="fs-poppins">Brightness</th>
+                <td class="fs-montserrat">Up to 2,000 nits</td>
+              </tr>
+
+              <tr>
+                <th class="fs-poppins">Storage</th>
+                <td class="fs-montserrat">64GB</td>
+              </tr>
+
+              <tr>
+                <th class="fs-poppins">Bluetooth</th>
+                <td class="fs-montserrat">5.3</td>
+              </tr>
+
+              <tr>
+                <th class="fs-poppins">Battery Size</th>
+                <td class="fs-montserrat">41mm: 309mAh <br>
+                    45mm: 282mAh</td>
+              </tr>
+
+              <tr>
+                <th class="fs-poppins">Other</th>
+                <td class="fs-montserrat">16m colors, 326 PPI, Snoopy/Pallete watch faces</td>
+              </tr>
+            </table>
+        </div>
+
+        <div class="details__tab-content" content id="reviews">
+        <div class="reviews__container grid">
+             <div class="review__single">
+              <div>
+                <img src="image/review-2.jpg" alt=""
+                class="review__img">
+                <h4 class="review__title fs-poppins">Manoj Shrestha</h4>
+              </div>
+
+              <div class="review__date">
+                <div class="review__rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="review__description fs-montserrat">
+                  I never had an Apple Watch before and this was very nice and easy to set up.
+                </p>
+
+                <span class="review__date fs-montserrat">December 4,2023 at 3:12 pm</span>
+              </div>
+             </div>
+
+             <div class="review__single">
+              <div>
+                <img src="image/review-1.jpg" alt=""
+                class="review__img">
+                <h4 class="review__title fs-poppins">Mausami Thapa</h4>
+              </div>
+
+              <div class="review__date">
+                <div class="review__rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review__description fs-montserrat">
+                  I never had an Apple Watch before and this was very nice and easy to set up.
+                </p>
+
+                <span class="review__date fs-montserrat">March 9,2023 at 4:00 pm</span>
+              </div>
+             </div>
+             <div class="review__single">
+              <div>
+                <img src="image/review-3.jpg" alt=""
+                class="review__img">
+                <h4 class="review__title fs-poppins">Arbind Shrestha</h4>
+              </div>
+
+              <div class="review__date">
+                <div class="review__rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="review__description fs-montserrat">
+                  I never had an Apple Watch before and this was very nice and easy to set up.
+                </p>
+
+                <span class="review__date fs-montserrat">January 1,2023 at 2:30 pm</span>
+              </div>
+             </div>
+             <div class="review__single">
+              <div>
+                <img src="image/review-4.jpg" alt=""
+                class="review__img">
+                <h4 class="review__title fs-poppins">Manish Gurung</h4>
+              </div>
+
+              <div class="review__date">
+                <div class="review__rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="review__description fs-montserrat">
+                  I never had an Apple Watch before and this was very nice and easy to set up.
+                </p>
+
+                <span class="review__date fs-montserrat">Octuber 3,2023 at 1:50 pm</span>
+              </div>
+             </div>
+        </div> 
+        <div class="review__form">
+          <h4 class="review__form-title fs-poppins"> Add a review</h4>
+  
+          <div class="rate__product">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+  
+          <form action="" class="form grid fs-montserrat">
+            <textarea class="form__input textarea"
+            placeholder="Write Comment"></textarea>
+  
+            <div class="form__group grid fs-montserrat">
+              <input type="text" name="" id="" placeholder="Name" class="form__input">
+  
+              <input type="email" placeholder="E-mail" class="form__input">
+            </div>
+  
+            <div class="form-btn">
+              <button class="large-btn bg-red text-white fs-poppins"> Submit Review</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+ </section>
+
+ <!-- ========================== End Detail tab ============================= -->
+
+    <!--=========================== swiper js==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=========================== swiper js==================== -->
+
+
+ <!-- ============= Product secton ==================== -->
+
+ <section class="best-sell-product grid">
+    <!--===================== 1 ======================-->
+<div class="product grid">
+ <a href="detail.html"><img src="image/7.png" alt=""></a>
+ <p class="fs-poppins bold-500">Apple MacBook Pro 16-inch (2021) </p>
+
+ <div class="shop-btn flex">
+   <button class="bg-red text-white fs-montserrat">
+     Add To Cart
+   </button>
+   <p class="fs-poppins bold-500"> Nrs 3.25,900.00</p>
+ </div>
+
+ <!--============================================-->
+
+ <div class="product-detail grid bg-red">
+   <i class="uil text-white uil-shopping-cart"></i>
+   <i class="uil text-white uil-heart-sign"></i>
+
+ </div>
+ <!------------------------------------------------>
+
+</div>
+   <!--===========================================-->
+
+    <!--===================== 2 ======================-->
+<div class="product grid">
+ <a href="detail-1.html"><img src="image/4.png" alt=""></a>
+ <p class="fs-poppins bold-500">Samsung Galaxy S24 Ultra</p>
+ <div class="shop-btn flex">
+   <button class="bg-red text-white fs-montserrat">
+     Add To Cart
+   </button>
+   <p class="fs-poppins bold-500"> Nrs 1,84,999.00</p>
+ </div>
+ <!--============================================-->
+
+ <div class="product-detail grid bg-red">
+   <i class="uil text-white uil-shopping-cart"></i>
+   <i class="uil text-white uil-heart-sign"></i>
+
+ </div>
+ <!------------------------------------------------>
+
+</div>
+   <!--===========================================-->
+
+    <!--===================== 3 ======================-->
+<div class="product grid">
+ <img src="image/a-18.png" alt="">
+ <p class="fs-poppins bold-500">I-phone 15 pro max</p>
+ <div class="shop-btn flex">
+   <button class="bg-red text-white fs-montserrat">
+     Add To Cart
+   </button>
+ <p class="fs-poppins bold-500"> Nrs 1,90,500.00</p>
+ </div>
+ <!--============================================-->
+
+ <div class="product-detail grid bg-red">
+   <i class="uil text-white uil-shopping-cart"></i>
+   <i class="uil text-white uil-heart-sign"></i>
+
+ </div>
+ <!------------------------------------------------>
+
+</div>
+   <!--===========================================-->
+
+    <!--==================== 4 =======================-->
+<div class="product grid">
+ <img src="image/3.png" alt="" >
+ <p class="fs-poppins bold-500">JBL Tune 720BT</p>
+ <div class="shop-btn flex">
+   <button class="bg-red text-white fs-montserrat">
+     Add To Cart
+   </button>
+ <p class="fs-poppins bold-500"> Nrs 9,900.00</p>
+ </div>
+ <!--============================================-->
+
+ <div class="product-detail grid bg-red">
+   <i class="uil text-white uil-shopping-cart"></i>
+   <i class="uil text-white uil-heart-sign"></i>
+
+ </div>
+ <!------------------------------------------------>
+
+</div>
+   <!--===========================================-->
+ </section>
+ <!-- ============= End Product secton ==================== -->
+
+      
+   <!-- ======================= Brand Section ===================== -->
+
+   <section class="brands grid">
+    <!------------ 1 ---------->
+    <div>
+      <img src="image/br-1.png" alt="">
+    </div>
+     <!----------- 2 ---------------->
+    <div>
+      <img src="image/br-2.png" alt="">
+    </div>
+      <!-------------- 3 -------------->
+    <div>
+      <img src="image/br-3.png" alt="">
+    </div>
+      <!-- ------------ 4 ------------ -->
+    <div>
+      <img src="image/br-4.png" alt="">
+    </div>
+       <!------------- 5 ----------------->
+    <div>
+      <img src="image/br-5.png" alt="">
+    </div>
+
+   </section>
+
+   <!-- ======================= End Brand Section ===================== -->
+
+   <!--========================= Footer Section ======================= -->
+
+   <section class="footer grid">
+    <div class="footer-logo grid">
+      <a href="home.html"><img src="image/logo.png" alt=""></a>
+      <p class="fs-montserrat fs-100"> There are many variation passages of Lorem Ipsum available,
+        but the majority have </p>
+    
+    <div class="social-media flex">
+      <a href="https://www.facebook.com/login.php/"><i class="uil uil-facebook-f" style="color: purple;"></i></a>
+      <a href="https://www.instagram.com/"><i class="uil uil-instagram"  style="color: purple;"></i></a>
+      <a href="https://twitter.com/"><i class="uil uil-twitter"  style="color: purple;"></i></a>
+      <a href="https://www.linkedin.com/"><i class="uil uil-linkedin"  style="color: purple;"></i></a>
+    </div>
+    </div>
+
+      <div class="footer-menu grid">
+        <h3 class="fs-poppins fs-200 bold-800">Quick link</h3>
+        <ul>
+        <li><a class="fs-montserrat text-black fs-100" href="home.html">Home</a></li>
+        <li><a class="fs-montserrat text-black fs-100" href="about.html">About</a></li>
+        <li><a class="fs-montserrat text-black fs-100" href="#">Shop</a></li>
+        <li><a class="fs-montserrat text-black fs-100" href="blog.html">Blog</a></li>
+        <li><a class="fs-montserrat text-black fs-100" href="contact.html">Contact</a></li>
+      </ul>
+      </div>
+       
+      <div class="contact grid">
+        <h3 class="fs-poppins fs-200 bold-800">Contact</h3>
+        <p class="fs-montserrat">+971 (0) 101 0000 888 Patricia C. Amedee 4401 Waldeck
+          Street Grapevine Nashville, TX 76051
+        </p>
+      </div>
+
+      <div class="emails grid">
+        <h3 class="fs-poppins fs-200 bold-800">Subscribe To Our Email</h3>
+        <p class="update fs-poppins fs-300 bold-800">For Lastest News And Updates</p>
+      
+      
+      <div class="inputfield flex bg-gray">
+        <input type="email" placeholder="Enter Your Email" 
+        class="fs-montserrat bg-gray">
+        <button class="bg-red  text-white fs-poppins fs-50">Subscribe</button>
+      </div>
+    </div>
+   </section>
+   <!--========================= End Footer Section ======================= -->
+
+   <!-- ======================== Copy Right Section ====================== -->
+
+   <section class="copyright">
+      <p class="c-font fs-montserrat fs-100">© 2021 eStore. All rights
+        reserved</p>
+        <p class="fs-montserrat fs-100 text-align p-top">
+          Privacy Policy . Terms and condition </p>
+   </section>
+   <!-- ======================== End Copy Right Section ====================== -->
+
+
+
+</body>
+</html>
+
