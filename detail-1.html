@@ -38,7 +38,7 @@
     <header class="primary-header container flex">
         <div class="header-inner-one flex">
             <div class="logo-container">
-                <a href="index.html"><img src="image/logo.png" alt="" id="logo"></a>
+                <a href="home.html"><img src="image/Logo.png" alt="" id="logo"></a>
             </div>
             <button class="mobile-close-btn" data-visible="false"
             aria-controls="primary-navigation"><i class="uil 
@@ -46,11 +46,11 @@
             <nav>
                 <ul id="primary-navigation" data-visible="false" 
                 class="primary-navigation flex" >
-                <li><a class="fs-100 fs-montserrat bold-500" href="index.html">Home</a></li>
-                <li><a class="fs-100 fs-montserrat bold-500" href="shop.html">Shop</a></li>
-                <li><a class="fs-100 fs-montserrat bold-500" href="about.html">Abouts Us</a></li>
-                <li><a class="fs-100 fs-montserrat bold-500" href="blog.html">Blog</a></li>
-                <li><a class="fs-100 fs-montserrat bold-500" href="contact.html">Contact Us</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/home.html">Home</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/shop.html">Shop</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/about.html">Abouts Us</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/blog.html">Blog</a></li>
+                <li><a class="fs-100 fs-montserrat bold-500" href="/contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -61,8 +61,8 @@
           
           <i class="search uil uil-search" id="search-btn"></i>
           
-          <i id="cart-icon" class="uli uil-shopping-bag"></i>
-          <div class="number">0</div>
+            <i id="cart-icon" class="uli uil-shopping-bag"></i>
+            <div class="number">0</div>
             <header>
               <nav class="navbar">
                   <button class="login-btn  fs-montserrat">LOG IN</button>
@@ -143,46 +143,37 @@
 
                <!-- CART BOX -->
 
-               <div id="cart-icon" data-visible="false" class="cart-icon">
-                      <div class="shopping flex">
-                        <p>Shopping Basket</p>
-                        <i id="cross-btn" class="uil uil-times"></i>
-                      </div>
-                      <div class="box">
-                        <i class="recycle uil uil-trash"></i>
-                        <img src="image/p-z.png">
-                        <div class="content">
-                          <h3 class="fs-poppins">JBL Tune 720BT</h3>
-                          <span class="Price fs-montserrat">Nrs 5,000.00 /- </span>
-                          <span class="quantity fs-montserrat">Qty : 1 </span>
-                        </div>
-                      </div>
+               <div class="cart">
+                  
+                <h2 class="cart-title fs-poppins">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content">
+                  <!-- text-box -->
+                  <div class="cart-box">
+                    <img src="image/1.png" class="cart-img" alt="">
+                    <div class="deatil-box">
+                      <div class="cart-product-title fs-poppins">Watch</div>
+                      <div class="cart-price fs-montserrat"> Nrs 44000.00</div>
+                      <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <!-- remove cart -->
+                    <i class="uil uil-trash cart-remove"></i>
+                  </div>
+                </div>
+                <!-- total -->
+                <div class="total">
+                <div class="total-title fs-poppins">Total</div>
+                <div class="total-price fs-montserrat">Nrs 0</div>
+                </div>
+                
+                <!-- buy button -->
+                <button type="button" class="buy-btn fs-poppins">Buy Now</button>
 
-                      <div class="box">
-                        <i class="recycle uil uil-trash"></i>
-                        <img src="image/p-q.png">
-                        <div class="content">
-                          <h3 class="fs-poppins">Apple Smart Watch SE 44MM</h3>
-                          <span class="Price fs-montserrat">Nrs 32,000.00 /- </span>
-                          <span class="quantity fs-montserrat">Qty : 1 </span>
-                        </div>
-                      </div>
+                <!-- cart close -->
+                <i id="cart-close" class="uil uil-times"></i>
 
-                      <div class="box">
-                        <i class="recycle uil uil-trash"></i>
-                        <img src="image/p-r.jpg">
-                        <div class="content">
-                         <h3 class="fs-poppins">SAMSUNG Galaxy S24 Ultra 5G</h3>
-                          <span class="Price fs-montserrat">Nrs 215,000.00 /- </span>
-                          <span class="quantity fs-montserrat">Qty : 1 </span>
-                        </div>
-                      </div>
-
-                      <div class="total fs-montserrat bold-500"> Total : 252,000.00/- </div>
-
-                      <a href="#" class="btn fs-montserrat bold-500">Checkout</a>
-                      
-               </div> 
+                
+         </div> 
                 <!--============================================================-->
         </div>
           <div class="mobile-open-btn">
