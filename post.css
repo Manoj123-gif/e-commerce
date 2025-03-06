@@ -1,4 +1,16 @@
 
+#blog-container{
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    padding: 5vw;
+}
+
+#blog-container .blogs{
+    width: 80%;
+    margin: 0 auto;
+    
+}
 .number1{
     background-color: hsl(var(--clr-red));
     color: hsl(var(--clr-white));
@@ -13,23 +25,11 @@
     width: 1rem;
 }
 
-#blog-container{
-    display: flex;
-    align-items: flex-start;
-    /* justify-content: space-between; */
-    padding: 5vw;
-}
-
-#blog-container .blogs{
-    width: 80%;
-    margin: 0 auto;
-    
-}
-
 .blogs .post img{
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
+
  
 .blogs .post h1{
         text-align: center;
