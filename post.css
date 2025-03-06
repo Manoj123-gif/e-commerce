@@ -1,4 +1,18 @@
 
+.number1{
+    background-color: hsl(var(--clr-red));
+    color: hsl(var(--clr-white));
+    border-radius: 0.3rem;
+    padding: 0rem 0.2rem ;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    height: 1.4rem;
+    margin-left: 4.2rem;
+    display: flex;
+    position: absolute;
+    width: 1rem;
+}
+
 #blog-container{
     display: flex;
     align-items: flex-start;
