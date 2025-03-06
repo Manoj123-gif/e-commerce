@@ -14,7 +14,10 @@ table{
     border-collapse: collapse;
 }
 
-
+.detail{
+    margin-top: 0.6rem;
+    height: 50%;
+}
 
 .detail__container{
       grid-template-columns: 5.5fr 6.5fr;
